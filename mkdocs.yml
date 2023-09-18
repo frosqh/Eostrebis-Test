@@ -1,4 +1,10 @@
-site_name: obsidian-mkdocs template
+site_name: Eostrebis
+site_url: https://frosqh.github.io/Eostrebis-public
+nav:
+ - Home: index.md
+ - Création de Personnage: Misc/Création de Personnages.md
+ - Eostrebis: Eostrebis/Eostrebis.md
+ - Sorts: Misc/Sorts.md
 
 theme:
     name: 'material'

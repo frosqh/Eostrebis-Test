@@ -1,0 +1,1 @@
+Uzorath est la capitale de [[Dargath]].
