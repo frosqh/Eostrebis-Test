@@ -58,6 +58,9 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks 
+  - exclude-search:
+      exclude:
+        - Misc/Sorts.md
 
 
 extra_javascript:
