@@ -1,0 +1,2696 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://frosqh.github.io/Eostrebis-public/Eostrebis/Classes/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
+    
+    
+      
+        <title>Classes - Eostrebis</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#barbare" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Eostrebis" class="md-header__button md-logo" aria-label="Eostrebis" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Eostrebis
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Classes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Eostrebis" class="md-nav__button md-logo" aria-label="Eostrebis" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Eostrebis
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Misc/Cr%C3%A9ation%20de%20Personnages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Création de Personnage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Eostrebis.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Eostrebis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Misc/Sorts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sorts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#primal-instinct" class="md-nav__link">
+    Primal Instinct
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-life-of-danger" class="md-nav__link">
+    A Life of Danger
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-barbarian" class="md-nav__link">
+    Creating a Barbarian
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating a Barbarian">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-barbarian-table" class="md-nav__link">
+    The Barbarian Table
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-features" class="md-nav__link">
+    Class Features
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hit-points" class="md-nav__link">
+    Hit Points
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proficiencies" class="md-nav__link">
+    Proficiencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equipment" class="md-nav__link">
+    Equipment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rage" class="md-nav__link">
+    Rage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unarmored-defense" class="md-nav__link">
+    Unarmored Defense
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reckless-attack" class="md-nav__link">
+    Reckless Attack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#danger-sense" class="md-nav__link">
+    Danger Sense
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primal-path" class="md-nav__link">
+    Primal Path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ability-score-improvement" class="md-nav__link">
+    Ability Score Improvement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fast-movement" class="md-nav__link">
+    Fast Movement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feral-instinct" class="md-nav__link">
+    Feral Instinct
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brutal-critical" class="md-nav__link">
+    Brutal Critical
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relentless-rage" class="md-nav__link">
+    Relentless Rage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brutal-critical_1" class="md-nav__link">
+    Brutal Critical
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistent-rage" class="md-nav__link">
+    Persistent Rage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brutal-critical_2" class="md-nav__link">
+    Brutal Critical
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indomitable-might" class="md-nav__link">
+    Indomitable Might
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primal-champion" class="md-nav__link">
+    Primal Champion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-class-features" class="md-nav__link">
+    Optional Class Features
+  </a>
+  
+    <nav class="md-nav" aria-label="Optional Class Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primal-knowledge" class="md-nav__link">
+    Primal Knowledge
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instinctive-pounce" class="md-nav__link">
+    Instinctive Pounce
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primal-knowledge_1" class="md-nav__link">
+    Primal Knowledge
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primal-paths" class="md-nav__link">
+    Primal Paths
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#path-of-the-ancestral-guardian" class="md-nav__link">
+    Path of the Ancestral Guardian
+  </a>
+  
+    <nav class="md-nav" aria-label="Path of the Ancestral Guardian">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ancestral-protectors" class="md-nav__link">
+    Ancestral Protectors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spirit-shield" class="md-nav__link">
+    Spirit Shield
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consult-the-spirits" class="md-nav__link">
+    Consult the Spirits
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vengeful-ancestors" class="md-nav__link">
+    Vengeful Ancestors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#path-of-the-battlerager" class="md-nav__link">
+    Path of the Battlerager
+  </a>
+  
+    <nav class="md-nav" aria-label="Path of the Battlerager">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#restriction-dwarves-only" class="md-nav__link">
+    Restriction: Dwarves Only
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battlerager-armor" class="md-nav__link">
+    Battlerager Armor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reckless-abandon" class="md-nav__link">
+    Reckless Abandon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battlerager-charge" class="md-nav__link">
+    Battlerager Charge
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spiked-retribution" class="md-nav__link">
+    Spiked Retribution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#path-of-the-beast" class="md-nav__link">
+    Path of the Beast
+  </a>
+  
+    <nav class="md-nav" aria-label="Path of the Beast">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#form-of-the-beast" class="md-nav__link">
+    Form of the Beast
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bestial-soul" class="md-nav__link">
+    Bestial Soul
+  </a>
+  
+    <nav class="md-nav" aria-label="Bestial Soul">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#climbing" class="md-nav__link">
+    Climbing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jumping" class="md-nav__link">
+    Jumping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swimming" class="md-nav__link">
+    Swimming
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infectious-fury" class="md-nav__link">
+    Infectious Fury
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#call-the-hunt" class="md-nav__link">
+    Call the Hunt
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#path-of-the-berserker" class="md-nav__link">
+    Path of the Berserker
+  </a>
+  
+    <nav class="md-nav" aria-label="Path of the Berserker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frenzy" class="md-nav__link">
+    Frenzy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mindless-rage" class="md-nav__link">
+    Mindless Rage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intimidating-presence" class="md-nav__link">
+    Intimidating Presence
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retaliation" class="md-nav__link">
+    Retaliation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#path-of-the-giant" class="md-nav__link">
+    Path of the Giant
+  </a>
+  
+    <nav class="md-nav" aria-label="Path of the Giant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#giants-power" class="md-nav__link">
+    Giant’s Power
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#giants-havoc" class="md-nav__link">
+    Giant’s Havoc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elemental-cleaver" class="md-nav__link">
+    Elemental Cleaver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mighty-impel" class="md-nav__link">
+    Mighty Impel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demiurgic-colossus" class="md-nav__link">
+    Demiurgic Colossus
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#path-of-the-storm-herald" class="md-nav__link">
+    Path of the Storm Herald
+  </a>
+  
+    <nav class="md-nav" aria-label="Path of the Storm Herald">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storm-aura" class="md-nav__link">
+    Storm Aura
+  </a>
+  
+    <nav class="md-nav" aria-label="Storm Aura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desert" class="md-nav__link">
+    Desert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sea" class="md-nav__link">
+    Sea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tundra" class="md-nav__link">
+    Tundra
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storm-soul" class="md-nav__link">
+    Storm Soul
+  </a>
+  
+    <nav class="md-nav" aria-label="Storm Soul">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desert_1" class="md-nav__link">
+    Desert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sea_1" class="md-nav__link">
+    Sea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tundra_1" class="md-nav__link">
+    Tundra
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shielding-storm" class="md-nav__link">
+    Shielding Storm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raging-storm" class="md-nav__link">
+    Raging Storm
+  </a>
+  
+    <nav class="md-nav" aria-label="Raging Storm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desert_2" class="md-nav__link">
+    Desert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sea_2" class="md-nav__link">
+    Sea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tundra_2" class="md-nav__link">
+    Tundra
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#path-of-the-totem-warrior" class="md-nav__link">
+    Path of the Totem Warrior
+  </a>
+  
+    <nav class="md-nav" aria-label="Path of the Totem Warrior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spirit-seeker" class="md-nav__link">
+    Spirit Seeker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#totem-spirit" class="md-nav__link">
+    Totem Spirit
+  </a>
+  
+    <nav class="md-nav" aria-label="Totem Spirit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bear" class="md-nav__link">
+    Bear
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eagle" class="md-nav__link">
+    Eagle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elk" class="md-nav__link">
+    Elk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tiger" class="md-nav__link">
+    Tiger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wolf" class="md-nav__link">
+    Wolf
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aspect-of-the-beast" class="md-nav__link">
+    Aspect of the Beast
+  </a>
+  
+    <nav class="md-nav" aria-label="Aspect of the Beast">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bear_1" class="md-nav__link">
+    Bear
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eagle_1" class="md-nav__link">
+    Eagle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elk_1" class="md-nav__link">
+    Elk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tiger_1" class="md-nav__link">
+    Tiger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wolf_1" class="md-nav__link">
+    Wolf
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spirit-walker" class="md-nav__link">
+    Spirit Walker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#totemic-attunement" class="md-nav__link">
+    Totemic Attunement
+  </a>
+  
+    <nav class="md-nav" aria-label="Totemic Attunement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bear_2" class="md-nav__link">
+    Bear
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eagle_2" class="md-nav__link">
+    Eagle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elk_2" class="md-nav__link">
+    Elk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tiger_2" class="md-nav__link">
+    Tiger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wolf_2" class="md-nav__link">
+    Wolf
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#path-of-the-zealot" class="md-nav__link">
+    Path of the Zealot
+  </a>
+  
+    <nav class="md-nav" aria-label="Path of the Zealot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#divine-fury" class="md-nav__link">
+    Divine Fury
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warrior-of-the-gods" class="md-nav__link">
+    Warrior of the Gods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fanatical-focus" class="md-nav__link">
+    Fanatical Focus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zealous-presence" class="md-nav__link">
+    Zealous Presence
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rage-beyond-death" class="md-nav__link">
+    Rage beyond Death
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#path-of-wild-magic" class="md-nav__link">
+    Path of Wild Magic
+  </a>
+  
+    <nav class="md-nav" aria-label="Path of Wild Magic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#magic-awareness" class="md-nav__link">
+    Magic Awareness
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wild-surge" class="md-nav__link">
+    Wild Surge
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bolstering-magic" class="md-nav__link">
+    Bolstering Magic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unstable-backlash" class="md-nav__link">
+    Unstable Backlash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controlled-surge" class="md-nav__link">
+    Controlled Surge
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voies-primitives" class="md-nav__link">
+    Voies primitives
+  </a>
+  
+    <nav class="md-nav" aria-label="Voies primitives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#voie-du-gardien-ancestral" class="md-nav__link">
+    Voie du gardien ancestral
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-du-fou-de-guerre" class="md-nav__link">
+    Voie du fou de guerre
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-de-la-bete" class="md-nav__link">
+    voie de la bête
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-du-berserker" class="md-nav__link">
+    voie du berserker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-du-heraut-des-tempetees" class="md-nav__link">
+    voie du héraut des tempêtees
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-du-guerrier-totemique" class="md-nav__link">
+    voie du guerrier totémique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-du-fanatique" class="md-nav__link">
+    voie du fanatique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-de-la-magie-sauvage" class="md-nav__link">
+    voie de la magie sauvage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-du-maudit" class="md-nav__link">
+    voie du maudit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-du-lunatique" class="md-nav__link">
+    voie du lunatique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-du-tonneau" class="md-nav__link">
+    voie du tonneau
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-du-fleau" class="md-nav__link">
+    voie du fléau
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-du-colosse" class="md-nav__link">
+    voie du colosse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-de-laileron" class="md-nav__link">
+    voie de l'aileron
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-du-heavy-metal" class="md-nav__link">
+    voie du heavy metal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-de-mashle" class="md-nav__link">
+    voie de mashle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-du-mage-rageur" class="md-nav__link">
+    voie du mage rageur
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voie-de-la-serenite" class="md-nav__link">
+    voie de la sérénité
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Tags -->
+
+
+<!-- Actions -->
+
+
+<!--
+  Hack: check whether the content contains a h1 headline. If it doesn't, the
+  page title (or respectively site name) is used as the main headline.
+-->
+
+
+
+
+<!-- Page content -->
+<p>Un certain nombre de classes sont disponibles pour les habitants d'Eostrebis :</p>
+<h1 id="barbare">Barbare<a class="headerlink" href="#barbare" title="Permanent link">&para;</a></h1>
+<p><img alt="" src="https://www.dndbeyond.com/avatars/thumbnails/6/342/420/618/636272680339895080.png" /></p>
+<p>A tall human tribesman strides through a blizzard, draped in fur and hefting his axe. He laughs as he charges toward the frost giant who dared poach his people’s elk herd.</p>
+<p>A half-orc snarls at the latest challenger to her authority over their tribe, ready to break his neck with her bare hands as she did to the last six rivals.</p>
+<p>Frothing at the mouth, a dwarf slams his helmet into the face of his drow foe, then turns to drive his armored elbow into the gut of another.</p>
+<p>These barbarians, different as they might be, are defined by their rage: unbridled, unquenchable, and unthinking fury. More than a mere emotion, their anger is the ferocity of a cornered predator, the unrelenting assault of a storm, the churning turmoil of the sea.</p>
+<p>For some, their rage springs from a communion with fierce animal spirits. Others draw from a roiling reservoir of anger at a world full of pain. For every barbarian, rage is a power that fuels not just a battle frenzy but also uncanny reflexes, resilience, and feats of strength.</p>
+<h2 id="primal-instinct">Primal Instinct<a class="headerlink" href="#primal-instinct" title="Permanent link">&para;</a></h2>
+<p>People of towns and cities take pride in their settled ways, as if denying one’s connection to nature were a mark of superiority. To a barbarian, though, a settled life is no virtue, but a sign of weakness. The strong embrace nature—valuing keen instincts, primal physicality, and ferocious rage. Barbarians are uncomfortable when hedged in by walls and crowds. They thrive in the wilds of their homelands: the tundra, jungle, or grasslands where their tribes live and hunt.</p>
+<p>Barbarians come alive in the chaos of combat. They can enter a berserk state where rage takes over, giving them superhuman strength and resilience. A barbarian can draw on this reservoir of fury only a few times without resting, but those few rages are usually sufficient to defeat whatever threats arise.</p>
+<h2 id="a-life-of-danger">A Life of Danger<a class="headerlink" href="#a-life-of-danger" title="Permanent link">&para;</a></h2>
+<p>A barbarian plays an important role as a protector of their people and a leader in times of war. Life in the wild places of the world is fraught with peril: rival tribes, deadly weather, and terrifying monsters. Barbarians charge headlong into that danger so that their people don’t have to.</p>
+<p>Their courage in the face of danger makes barbarians perfectly suited for adventuring. Wandering is often a way of life for their native tribes, and the rootless life of the adventurer is little hardship for a barbarian. Some barbarians miss the close-knit family structures of the tribe, but eventually find them replaced by the bonds formed among the members of their adventuring parties.</p>
+<h2 id="creating-a-barbarian">Creating a Barbarian<a class="headerlink" href="#creating-a-barbarian" title="Permanent link">&para;</a></h2>
+<p>When creating a barbarian character, think about where your character comes from and his or her place in the world. Talk with your DM about an appropriate origin for your barbarian. Did you come from a distant land, making you a stranger in the area of the campaign? Or is the campaign set in a rough-and-tumble frontier where barbarians are common?</p>
+<p>What led you to take up the adventuring life? Were you lured to settled lands by the promise of riches? Did you join forces with soldiers of those lands to face a shared threat? Did monsters or an invading horde drive you out of your homeland, making you a rootless refugee? Perhaps you were a prisoner of war, brought in chains to another land and only now able to win your freedom. Or you might have been cast out from your people because of a crime you committed, a taboo you violated, or a coup that removed you from a position of authority.</p>
+<blockquote>
+<p><strong>QUICK BUILD</strong></p>
+<p>You can make a barbarian quickly by following these suggestions. First, put your highest ability score in Strength, followed by Constitution. Second, choose the outlander background.</p>
+</blockquote>
+<h3 id="the-barbarian-table">The Barbarian Table<a class="headerlink" href="#the-barbarian-table" title="Permanent link">&para;</a></h3>
+<p>| 
+Level</p>
+<p>| </p>
+<p>Proficiency<br />
+Bonus</p>
+<p>| </p>
+<p>Features</p>
+<p>| </p>
+<p>Rages</p>
+<p>| </p>
+<p>Rage<br />
+Damage</p>
+<p>|
+| --- | --- | --- | --- | --- |
+| </p>
+<p>1st</p>
+<p>| </p>
+<p>+2</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#Rage-51">Rage</a>, <a href="https://www.dndbeyond.com/classes/barbarian#UnarmoredDefense-52">Unarmored Defense</a></p>
+<p>| </p>
+<p>2</p>
+<p>| </p>
+<p>+2</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>2nd</p>
+<p>| </p>
+<p>+2</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#RecklessAttack-53">Reckless Attack</a>, <a href="https://www.dndbeyond.com/classes/barbarian#DangerSense-54">Danger Sense</a></p>
+<p>| </p>
+<p>2</p>
+<p>| </p>
+<p>+2</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>3rd</p>
+<p>| </p>
+<p>+2</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#PrimalPath-55">Primal Path</a></p>
+<p>| </p>
+<p>3</p>
+<p>| </p>
+<p>+2</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>4th</p>
+<p>| </p>
+<p>+2</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#AbilityScoreImprovement-56">Ability Score Improvement</a></p>
+<p>| </p>
+<p>3</p>
+<p>| </p>
+<p>+2</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>5th</p>
+<p>| </p>
+<p>+3</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#ExtraAttack-61">Extra Attack</a>, <a href="https://www.dndbeyond.com/classes/barbarian#FastMovement-62">Fast Movement</a></p>
+<p>| </p>
+<p>3</p>
+<p>| </p>
+<p>+2</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>6th</p>
+<p>| </p>
+<p>+3</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#PrimalPaths">Path Feature</a></p>
+<p>| </p>
+<p>4</p>
+<p>| </p>
+<p>+2</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>7th</p>
+<p>| </p>
+<p>+3</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#FeralInstinct-63">Feral Instinct</a></p>
+<p>| </p>
+<p>4</p>
+<p>| </p>
+<p>+2</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>8th</p>
+<p>| </p>
+<p>+3</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#AbilityScoreImprovement-56">Ability Score Improvement</a></p>
+<p>| </p>
+<p>4</p>
+<p>| </p>
+<p>+2</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>9th</p>
+<p>| </p>
+<p>+4</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#BrutalCritical-64">Brutal Critical</a> (1 die)</p>
+<p>| </p>
+<p>4</p>
+<p>| </p>
+<p>+3</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>10th</p>
+<p>| </p>
+<p>+4</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#PrimalPaths">Path Feature</a></p>
+<p>| </p>
+<p>4</p>
+<p>| </p>
+<p>+3</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>11th</p>
+<p>| </p>
+<p>+4</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#RelentlessRage-67">Relentless Rage</a></p>
+<p>| </p>
+<p>4</p>
+<p>| </p>
+<p>+3</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>12th</p>
+<p>| </p>
+<p>+4</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#AbilityScoreImprovement-56">Ability Score Improvement</a></p>
+<p>| </p>
+<p>5</p>
+<p>| </p>
+<p>+3</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>13th</p>
+<p>| </p>
+<p>+5</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#BrutalCritical-65">Brutal Critical</a> (2 dice)</p>
+<p>| </p>
+<p>5</p>
+<p>| </p>
+<p>+3</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>14th</p>
+<p>| </p>
+<p>+5</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#PrimalPaths">Path Feature</a></p>
+<p>| </p>
+<p>5</p>
+<p>| </p>
+<p>+3</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>15th</p>
+<p>| </p>
+<p>+5</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#PersistentRage-68">Persistent Rage</a></p>
+<p>| </p>
+<p>5</p>
+<p>| </p>
+<p>+3</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>16th</p>
+<p>| </p>
+<p>+5</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#AbilityScoreImprovement-56">Ability Score Improvement</a></p>
+<p>| </p>
+<p>5</p>
+<p>| </p>
+<p>+4</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>17th</p>
+<p>| </p>
+<p>+6</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#BrutalCritical-66">Brutal Critical</a> (3 dice)</p>
+<p>| </p>
+<p>6</p>
+<p>| </p>
+<p>+4</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>18th</p>
+<p>| </p>
+<p>+6</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#IndomitableMight-69">Indomitable Might</a></p>
+<p>| </p>
+<p>6</p>
+<p>| </p>
+<p>+4</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>19th</p>
+<p>| </p>
+<p>+6</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#AbilityScoreImprovement-56">Ability Score Improvement</a></p>
+<p>| </p>
+<p>6</p>
+<p>| </p>
+<p>+4</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>20th</p>
+<p>| </p>
+<p>+6</p>
+<p>| </p>
+<p><a href="https://www.dndbeyond.com/classes/barbarian#PrimalChampion-70">Primal Champion</a></p>
+<p>| </p>
+<p>Unlimited</p>
+<p>| </p>
+<p>+4</p>
+<p>|</p>
+<h2 id="class-features">Class Features<a class="headerlink" href="#class-features" title="Permanent link">&para;</a></h2>
+<p>As a barbarian, you gain the following class features.</p>
+<h4 id="hit-points">Hit Points<a class="headerlink" href="#hit-points" title="Permanent link">&para;</a></h4>
+<p><strong>Hit Dice:</strong> 1d12 per barbarian level<br />
+<strong>Hit Points at 1st Level:</strong> 12 + your Constitution modifier<br />
+<strong>Hit Points at Higher Levels:</strong> 1d12 (or 7) + your Constitution modifier per barbarian level after 1st</p>
+<h4 id="proficiencies">Proficiencies<a class="headerlink" href="#proficiencies" title="Permanent link">&para;</a></h4>
+<p><strong>Armor:</strong> Light armor, medium armor, shields<br />
+<strong>Weapons:</strong> Simple weapons, martial weapons<br />
+<strong>Tools:</strong> None<br />
+<strong>Saving Throws:</strong> Strength, Constitution<br />
+<strong>Skills:</strong> Choose two from <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/using-ability-scores#AnimalHandling">Animal Handling</a>, <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/using-ability-scores#Athletics">Athletics</a>, <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/using-ability-scores#Intimidation">Intimidation</a>, <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/using-ability-scores#Nature">Nature</a>, <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/using-ability-scores#Perception">Perception</a>, and <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/using-ability-scores#Survival">Survival</a></p>
+<h4 id="equipment">Equipment<a class="headerlink" href="#equipment" title="Permanent link">&para;</a></h4>
+<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+<ul>
+<li>(a) a greataxe or (b) any martial melee weapon</li>
+<li>(a) two handaxes or (b) any simple weapon</li>
+<li>An explorer’s pack and four javelins</li>
+</ul>
+<h4 id="rage">Rage<a class="headerlink" href="#rage" title="Permanent link">&para;</a></h4>
+<p>In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.</p>
+<p>While raging, you gain the following benefits if you aren’t wearing heavy armor:</p>
+<ul>
+<li>You have advantage on Strength checks and Strength saving throws.</li>
+<li>When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.</li>
+<li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
+</ul>
+<p>If you are able to cast spells, you can’t cast them or concentrate on them while raging.</p>
+<p>Your rage lasts for 1 minute. It ends early if you are knocked <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Unconscious">unconscious</a> or if your turn ends and you haven’t attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.</p>
+<p>Once you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again.</p>
+<h4 id="unarmored-defense">Unarmored Defense<a class="headerlink" href="#unarmored-defense" title="Permanent link">&para;</a></h4>
+<p>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.</p>
+<h4 id="reckless-attack">Reckless Attack<a class="headerlink" href="#reckless-attack" title="Permanent link">&para;</a></h4>
+<p>Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</p>
+<h4 id="danger-sense">Danger Sense<a class="headerlink" href="#danger-sense" title="Permanent link">&para;</a></h4>
+<p>At 2nd level, you gain an uncanny sense of when things nearby aren’t as they should be, giving you an edge when you dodge away from danger.</p>
+<p>You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can’t be <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Blinded">blinded</a>, <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Deafened">deafened</a>, or <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Incapacitated">incapacitated</a>.</p>
+<h4 id="primal-path">Primal Path<a class="headerlink" href="#primal-path" title="Permanent link">&para;</a></h4>
+<p>At 3rd level, you choose a path that shapes the nature of your rage. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.</p>
+<h4 id="ability-score-improvement">Ability Score Improvement<a class="headerlink" href="#ability-score-improvement" title="Permanent link">&para;</a></h4>
+<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+<p>Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.</p>
+<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Attack">Attack</a> action on your turn.</p>
+<h4 id="fast-movement">Fast Movement<a class="headerlink" href="#fast-movement" title="Permanent link">&para;</a></h4>
+<p>Starting at 5th level, your speed increases by 10 feet while you aren’t wearing heavy armor.</p>
+<h4 id="feral-instinct">Feral Instinct<a class="headerlink" href="#feral-instinct" title="Permanent link">&para;</a></h4>
+<p>By 7th level, your instincts are so honed that you have advantage on initiative rolls.</p>
+<p>Additionally, if you are surprised at the beginning of combat and aren’t <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Incapacitated">incapacitated</a>, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.</p>
+<h4 id="brutal-critical">Brutal Critical<a class="headerlink" href="#brutal-critical" title="Permanent link">&para;</a></h4>
+<p>Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</p>
+<p>This increases to two additional dice at 13th level and three additional dice at 17th level.</p>
+<h4 id="relentless-rage">Relentless Rage<a class="headerlink" href="#relentless-rage" title="Permanent link">&para;</a></h4>
+<p>Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you’re raging and don’t die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.</p>
+<p>Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</p>
+<h4 id="brutal-critical_1">Brutal Critical<a class="headerlink" href="#brutal-critical_1" title="Permanent link">&para;</a></h4>
+<p>At 13th level, you can roll two additional weapon damage dice when determining the extra damage for a critical hit with a melee attack.</p>
+<p>This increases to three additional dice at 17th level.</p>
+<h4 id="persistent-rage">Persistent Rage<a class="headerlink" href="#persistent-rage" title="Permanent link">&para;</a></h4>
+<p>Beginning at 15th level, your rage is so fierce that it ends early only if you fall <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Unconscious">unconscious</a> or if you choose to end it.</p>
+<h4 id="brutal-critical_2">Brutal Critical<a class="headerlink" href="#brutal-critical_2" title="Permanent link">&para;</a></h4>
+<p>At 17th level, you can roll three additional weapon damage dice when determining the extra damage for a critical hit with a melee attack.</p>
+<h4 id="indomitable-might">Indomitable Might<a class="headerlink" href="#indomitable-might" title="Permanent link">&para;</a></h4>
+<p>Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total.</p>
+<h4 id="primal-champion">Primal Champion<a class="headerlink" href="#primal-champion" title="Permanent link">&para;</a></h4>
+<p>At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24.</p>
+<h2 id="optional-class-features">Optional Class Features<a class="headerlink" href="#optional-class-features" title="Permanent link">&para;</a></h2>
+<h4 id="primal-knowledge">Primal Knowledge<a class="headerlink" href="#primal-knowledge" title="Permanent link">&para;</a></h4>
+<p><em>3rd-level barbarian feature</em><br />
+When you reach 3rd level and again at 10th level, you gain proficiency in one skill of your choice from the list of skills available to barbarians at 1st level.</p>
+<h4 id="instinctive-pounce">Instinctive Pounce<a class="headerlink" href="#instinctive-pounce" title="Permanent link">&para;</a></h4>
+<p><em>7th-level barbarian feature</em><br />
+As part of the bonus action you take to enter your rage, you can move up to half your speed.</p>
+<h4 id="primal-knowledge_1">Primal Knowledge<a class="headerlink" href="#primal-knowledge_1" title="Permanent link">&para;</a></h4>
+<p><em>10th-level barbarian feature</em><br />
+When you reach 3rd level and again at 10th level, you gain proficiency in one skill of your choice from the list of skills available to barbarians at 1st level.</p>
+<h2 id="primal-paths">Primal Paths<a class="headerlink" href="#primal-paths" title="Permanent link">&para;</a></h2>
+<p>Rage burns in every barbarian’s heart, a furnace that drives him or her toward greatness. Different barbarians attribute their rage to different sources, however. For some, it is an internal reservoir where pain, grief, and anger are forged into a fury hard as steel. Others see it as a spiritual blessing, a gift of a totem animal.</p>
+<h2 id="path-of-the-ancestral-guardian">Path of the Ancestral Guardian<a class="headerlink" href="#path-of-the-ancestral-guardian" title="Permanent link">&para;</a></h2>
+<p>Some barbarians hail from cultures that revere their ancestors. These tribes teach that the warriors of the past linger in the world as mighty spirits, who can guide and protect the living. When a barbarian who follows this path rages, the barbarian contacts the spirit world and calls on these guardian spirits for aid.</p>
+<p>Barbarians who draw on their ancestral guardians can better fight to protect their tribes and their allies. In order to cement ties to their ancestral guardians, barbarians who follow this path cover themselves in elaborate tattoos that celebrate their ancestors’ deeds. These tattoos tell sagas of victories against terrible monsters and other fearsome rivals.</p>
+<table>
+<thead>
+<tr>
+<th>Barbarian Level</th>
+<th>Feature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3rd</td>
+<td>Ancestral Protectors</td>
+</tr>
+<tr>
+<td>6th</td>
+<td>Spirit Shield (2d6)</td>
+</tr>
+<tr>
+<td>10th</td>
+<td>Consult the Spirits, Spirit Shield (3d6)</td>
+</tr>
+<tr>
+<td>14th</td>
+<td>Vengeful Ancestors, Spirit Shield (4d6)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ancestral-protectors">Ancestral Protectors<a class="headerlink" href="#ancestral-protectors" title="Permanent link">&para;</a></h4>
+<p>Starting when you choose this path at 3rd level, spectral warriors appear when you enter your rage. While you’re raging, the first creature you hit with an attack on your turn becomes the target of the warriors, which hinder its attacks. Until the start of your next turn, that target has disadvantage on any attack roll that isn’t against you, and when the target hits a creature other than you with an attack, that creature has resistance to the damage dealt by the attack. The effect on the target ends early if your rage ends.</p>
+<h4 id="spirit-shield">Spirit Shield<a class="headerlink" href="#spirit-shield" title="Permanent link">&para;</a></h4>
+<p>Beginning at 6th level, the guardian spirits that aid you can provide supernatural protection to those you defend. If you are raging and another creature you can see within 30 feet of you takes damage, you can use your reaction to reduce that damage by 2d6.</p>
+<p>When you reach certain levels in this class, you can reduce the damage by more: by 3d6 at 10th level and by 4d6 at 14th level.</p>
+<h4 id="consult-the-spirits">Consult the Spirits<a class="headerlink" href="#consult-the-spirits" title="Permanent link">&para;</a></h4>
+<p>At 10th level, you gain the ability to consult with your ancestral spirits. When you do so, you cast the <a href="https://www.dndbeyond.com/spells/augury">augury</a> or <a href="https://www.dndbeyond.com/spells/clairvoyance">clairvoyance</a> spell, without using a spell slot or material components. Rather than creating a spherical sensor, this use of <a href="https://www.dndbeyond.com/spells/clairvoyance">clairvoyance</a> invisibly summons one of your ancestral spirits to the chosen location. Wisdom is your spellcasting ability for these spells.</p>
+<p>After you cast either spell in this way, you can’t use this feature again until you finish a short or long rest.</p>
+<h4 id="vengeful-ancestors">Vengeful Ancestors<a class="headerlink" href="#vengeful-ancestors" title="Permanent link">&para;</a></h4>
+<p>At 14th level, your ancestral spirits grow powerful enough to retaliate. When you use your Spirit Shield to reduce the damage of an attack, the attacker takes an amount of force damage equal to the damage that your Spirit Shield prevents.</p>
+<h2 id="path-of-the-battlerager">Path of the Battlerager<a class="headerlink" href="#path-of-the-battlerager" title="Permanent link">&para;</a></h2>
+<p>Known as Kuldjargh (literally “axe idiot”) in Dwarvish, battleragers are dwarf followers of the gods of war and take the Path of the Battlerager. They specialize in wearing bulky, spiked armor and throwing themselves into combat, striking with their body itself and giving themselves over to the fury of battle.</p>
+<h4 id="restriction-dwarves-only">Restriction: Dwarves Only<a class="headerlink" href="#restriction-dwarves-only" title="Permanent link">&para;</a></h4>
+<p>Only dwarves can follow the Path of the Battlerager. The battlerager fills a particular niche in dwarven society and culture.</p>
+<p>Your DM can lift this restriction to better suit the campaign. The restriction exists for the Forgotten Realms. It might not apply to your DM’s setting or your DM’s version of the Realms.</p>
+<h4 id="battlerager-armor">Battlerager Armor<a class="headerlink" href="#battlerager-armor" title="Permanent link">&para;</a></h4>
+<p>When you choose this path at 3rd level, you gain the ability to use spiked armor (see the “Spiked Armor” sidebar) as a weapon.</p>
+<p>While you are wearing <a href="https://www.dndbeyond.com/equipment/spiked-armor">spiked armor</a> and are raging, you can use a bonus action to make one melee weapon attack with your armor spikes against a target within 5 feet of you. If the attack hits, the spikes deal 1d4 piercing damage. You use your Strength modifier for the attack and damage rolls.</p>
+<p>Additionally, when you use the <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Attack">Attack</a> action to grapple a creature, the target takes 3 piercing damage if your grapple check succeeds.</p>
+<blockquote>
+<p><strong>SPIKED ARMOR</strong></p>
+<p>Spiked armor is a rare type of medium armor made by dwarves. It consists of a leather coat and leggings covered with spikes that are usually made of metal.<br />
+<strong>Cost:</strong> 75 gp<br />
+<strong>AC:</strong> 14 + Dexterity modifier (max 2)<br />
+<strong>Stealth:</strong> Disadvantage <br />
+<strong>Weight:</strong> 45 lb.</p>
+</blockquote>
+<h4 id="reckless-abandon">Reckless Abandon<a class="headerlink" href="#reckless-abandon" title="Permanent link">&para;</a></h4>
+<p>Beginning at 6th level, when you use Reckless Attack while raging, you also gain temporary hit points equal to your Constitution modifier (minimum of 1). They vanish if any of them are left when your rage ends.</p>
+<h4 id="battlerager-charge">Battlerager Charge<a class="headerlink" href="#battlerager-charge" title="Permanent link">&para;</a></h4>
+<p>Beginning at 10th level, you can take the <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Dash">Dash</a> action as a bonus action while you are raging.</p>
+<h4 id="spiked-retribution">Spiked Retribution<a class="headerlink" href="#spiked-retribution" title="Permanent link">&para;</a></h4>
+<p>Starting at 14th level, when a creature within 5 feet of you hits you with a melee attack, the attacker takes 3 piercing damage if you are raging, aren’t <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Incapacitated">incapacitated</a>, and are wearing spiked armor.</p>
+<h2 id="path-of-the-beast">Path of the Beast<a class="headerlink" href="#path-of-the-beast" title="Permanent link">&para;</a></h2>
+<p>Barbarians who walk the Path of the Beast draw their rage from a bestial spark burning within their souls. That beast bursts forth in the throes of rage, physically transforming the barbarian.</p>
+<p>Such a barbarian might be inhabited by a primal spirit or be descended from shape-shifters. You can choose the origin of your feral might or determine it by rolling on the Origin of the Beast table.</p>
+<table>
+<thead>
+<tr>
+<th>d4</th>
+<th>Origin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>One of your parents is a lycanthrope, and you’ve inherited some of their curse.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>You are descended from an archdruid and inherited the ability to partially change shape.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>A fey spirit gifted you with the ability to adopt different bestial aspects.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>An ancient animal spirit dwells within you, allowing you to walk this path.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="form-of-the-beast">Form of the Beast<a class="headerlink" href="#form-of-the-beast" title="Permanent link">&para;</a></h4>
+<p><em>3rd-level Path of the Beast feature</em></p>
+<p>When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal.</p>
+<p>You choose the weapon’s form each time you rage:</p>
+<p><strong>Bite.</strong> Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.</p>
+<p><strong>Claws.</strong> Each of your hands transforms into a claw, which you can use as a weapon if it’s empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using the <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Attack">Attack</a> action, you can make one additional claw attack as part of the same action.</p>
+<p><strong>Tail.</strong> You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/equipment#WeaponProperties">reach</a> property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you.</p>
+<h4 id="bestial-soul">Bestial Soul<a class="headerlink" href="#bestial-soul" title="Permanent link">&para;</a></h4>
+<p><em>6th-level Path of the Beast feature</em></p>
+<p>The feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+<p>You can also alter your form to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish your next short or long rest:</p>
+<h5 id="climbing">Climbing<a class="headerlink" href="#climbing" title="Permanent link">&para;</a></h5>
+<p>You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+<h5 id="jumping">Jumping<a class="headerlink" href="#jumping" title="Permanent link">&para;</a></h5>
+<p>When you jump, you can make a Strength (<a href="https://www.dndbeyond.com/compendium/rules/basic-rules/using-ability-scores#Athletics">Athletics</a>) check and extend your jump by a number of feet equal to the check’s total. You can make this special check only once per turn.</p>
+<h5 id="swimming">Swimming<a class="headerlink" href="#swimming" title="Permanent link">&para;</a></h5>
+<p>You gain a swimming speed equal to your walking speed, and you can breathe underwater.</p>
+<h4 id="infectious-fury">Infectious Fury<a class="headerlink" href="#infectious-fury" title="Permanent link">&para;</a></h4>
+<p><em>10th-level Path of the Beast feature</em></p>
+<p>When you hit a creature with your natural weapons while you are raging, the beast within you can curse your target with rabid fury. The target must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice):</p>
+<ul>
+<li>The target must use its reaction to make a melee attack against another creature of your choice that you can see.</li>
+<li>The target takes 2d12 psychic damage.</li>
+</ul>
+<p>You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+<h4 id="call-the-hunt">Call the Hunt<a class="headerlink" href="#call-the-hunt" title="Permanent link">&para;</a></h4>
+<p><em>14th-level Path of the Beast feature</em></p>
+<p>The beast within you grows so powerful that you can spread its ferocity to others and gain resilience from them joining your hunt. When you enter your rage, you can choose a number of other willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature). You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can each use the following benefit once on each of their turns: when the creature hits a target with an attack roll and deals damage to it, the creature can roll a d6 and gain a bonus to the damage equal to the number rolled.</p>
+<p>You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+<h2 id="path-of-the-berserker">Path of the Berserker<a class="headerlink" href="#path-of-the-berserker" title="Permanent link">&para;</a></h2>
+<p>For some barbarians, rage is a means to an end—that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker’s rage, you thrill in the chaos of battle, heedless of your own health or well-being.</p>
+<h4 id="frenzy">Frenzy<a class="headerlink" href="#frenzy" title="Permanent link">&para;</a></h4>
+<p>Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Exhaustion">exhaustion</a>.</p>
+<h4 id="mindless-rage">Mindless Rage<a class="headerlink" href="#mindless-rage" title="Permanent link">&para;</a></h4>
+<p>Beginning at 6th level, you can’t be <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Charmed">charmed</a> or <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Frightened">frightened</a> while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.</p>
+<h4 id="intimidating-presence">Intimidating Presence<a class="headerlink" href="#intimidating-presence" title="Permanent link">&para;</a></h4>
+<p>Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Frightened">frightened</a> of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Frightened">frightened</a> creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60 feet away from you.</p>
+<p>If the creature succeeds on its saving throw, you can’t use this feature on that creature again for 24 hours.</p>
+<h4 id="retaliation">Retaliation<a class="headerlink" href="#retaliation" title="Permanent link">&para;</a></h4>
+<p>Starting at 14th level, when you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature.</p>
+<h2 id="path-of-the-giant">Path of the Giant<a class="headerlink" href="#path-of-the-giant" title="Permanent link">&para;</a></h2>
+<p>Barbarians who walk the Path of the Giant draw strength from the same primal forces as giants. As they rage, these barbarians surge with elemental power and grow in size, taking on forms that evoke the glory of giants. Some barbarians look like oversized versions of themselves, perhaps with a hint of elemental energy flaring in their eyes and around their weapons. Others transform more dramatically, taking on the appearance of an actual giant or a form similar to an Elemental, wreathed in fire, frost, or lightning.</p>
+<h4 id="giants-power">Giant’s Power<a class="headerlink" href="#giants-power" title="Permanent link">&para;</a></h4>
+<p><em>3rd-Level Path of the Giant Feature</em></p>
+<p>When you choose this path, you learn to speak, read, and write Giant or one other language of your choice if you already know Giant. Additionally, you learn a cantrip of your choice: either <a href="https://www.dndbeyond.com/spells/druidcraft">druidcraft</a> or <a href="https://www.dndbeyond.com/spells/thaumaturgy">thaumaturgy</a>. Wisdom is your spellcasting ability for this spell.</p>
+<h4 id="giants-havoc">Giant’s Havoc<a class="headerlink" href="#giants-havoc" title="Permanent link">&para;</a></h4>
+<p><em>3rd-Level Path of the Giant Feature</em></p>
+<p>Your rages pull strength from the primal might of giants, transforming you into a hulking force of destruction. While raging, you gain the following benefits:</p>
+<p><strong>Crushing Throw.</strong> When you make a successful ranged attack with a thrown weapon using Strength, you can add your Rage Damage bonus to the attack’s damage roll.</p>
+<p><strong>Giant Stature.</strong> Your reach increases by 5 feet, and if you are smaller than Large, you become Large, along with anything you are wearing. If there isn’t enough room for you to increase your size, your size doesn’t change.</p>
+<h4 id="elemental-cleaver">Elemental Cleaver<a class="headerlink" href="#elemental-cleaver" title="Permanent link">&para;</a></h4>
+<p><em>6th-Level Path of the Giant Feature</em></p>
+<p>Your bond with the elemental might of giants grows, and you learn to infuse weapons with primordial energy.</p>
+<p>When you enter your rage, you can choose one weapon that you are holding and infuse it with one of the following damage types: acid, cold, fire, thunder, or lightning. While you wield the infused weapon during your rage, the weapon’s damage type changes to the chosen type, it deals an extra 1d6 damage of the chosen type when it hits, and it gains the <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/equipment#WeaponProperties">thrown</a> property, with a normal range of 20 feet and a long range of 60 feet. If you throw the weapon, it reappears in your hand the instant after it hits or misses a target. The infused weapon’s benefits are suppressed while a creature other than you wields it.</p>
+<p>While raging and holding the infused weapon, you can use a bonus action to change the infused weapon’s current damage type to another one from the damage type options above.</p>
+<h4 id="mighty-impel">Mighty Impel<a class="headerlink" href="#mighty-impel" title="Permanent link">&para;</a></h4>
+<p><em>10th-Level Path of the Giant Feature</em></p>
+<p>Your connection to giant strength allows you to hurl both allies and enemies on the battlefield. As a bonus action while raging, you can choose one Medium or smaller creature within your reach and move it to an unoccupied space you can see within 30 feet of yourself. An unwilling creature must succeed on a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier) to avoid the effect.</p>
+<p>If, at the end of this movement, the thrown creature isn’t on a surface or liquid that can support it, the creature falls, taking damage as normal and landing <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Prone">prone</a>.</p>
+<h4 id="demiurgic-colossus">Demiurgic Colossus<a class="headerlink" href="#demiurgic-colossus" title="Permanent link">&para;</a></h4>
+<p><em>14th-Level Path of the Giant Feature</em></p>
+<p>The primordial power of your rage intensifies. When you rage, your reach increases by 10 feet, your size can increase to Large or Huge (your choice), and you can use your Mighty Impel to move creatures that are Large or smaller.</p>
+<p>In addition, the extra damage dealt by your Elemental Cleaver feature increases to 2d6.</p>
+<h2 id="path-of-the-storm-herald">Path of the Storm Herald<a class="headerlink" href="#path-of-the-storm-herald" title="Permanent link">&para;</a></h2>
+<p>All barbarians harbor a fury within. Their rage grants them superior strength, durability, and speed. Barbarians who follow the Path of the Storm Herald learn to transform that rage into a mantle of primal magic, which swirls around them. When in a fury, a barbarian of this path taps into the forces of nature to create powerful magical effects.</p>
+<p>Storm heralds are typically elite champions who train alongside druids, rangers, and others sworn to protect nature. Other storm heralds hone their craft in lodges in regions wracked by storms, in the frozen reaches at the world’s end, or deep in the hottest deserts.</p>
+<p>Path of the Storm Herald Features</p>
+<table>
+<thead>
+<tr>
+<th>Barbarian Level</th>
+<th>Feature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3rd</td>
+<td>Storm Aura</td>
+</tr>
+<tr>
+<td>6th</td>
+<td>Storm Soul</td>
+</tr>
+<tr>
+<td>10th</td>
+<td>Shielding Storm</td>
+</tr>
+<tr>
+<td>14th</td>
+<td>Raging Storm</td>
+</tr>
+</tbody>
+</table>
+<h4 id="storm-aura">Storm Aura<a class="headerlink" href="#storm-aura" title="Permanent link">&para;</a></h4>
+<p>Starting at 3rd level, you emanate a stormy, magical aura while you rage. The aura extends 10 feet from you in every direction, but not through total cover.</p>
+<p>Your aura has an effect that activates when you enter your rage, and you can activate the effect again on each of your turns as a bonus action. Choose desert, sea, or tundra. Your aura’s effect depends on that chosen environment, as detailed below. You can change your environment choice whenever you gain a level in this class.</p>
+<p>If your aura’s effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.</p>
+<h5 id="desert">Desert<a class="headerlink" href="#desert" title="Permanent link">&para;</a></h5>
+<p>When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.</p>
+<h5 id="sea">Sea<a class="headerlink" href="#sea" title="Permanent link">&para;</a></h5>
+<p>When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes 1d6 lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to 2d6 at 10th level, 3d6 at 15th level, and 4d6 at 20th level.</p>
+<h5 id="tundra">Tundra<a class="headerlink" href="#tundra" title="Permanent link">&para;</a></h5>
+<p>When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.</p>
+<h4 id="storm-soul">Storm Soul<a class="headerlink" href="#storm-soul" title="Permanent link">&para;</a></h4>
+<h5 id="desert_1">Desert<a class="headerlink" href="#desert_1" title="Permanent link">&para;</a></h5>
+<p>You gain resistance to fire damage, and you don’t suffer the effects of extreme heat, as described in the <em><a href="https://www.dndbeyond.com/sources/dmg" title="Dungeon Master’s Guide">Dungeon Master’s Guide</a></em>. Moreover, as an action, you can touch a flammable object that isn’t being worn or carried by anyone else and set it on fire.</p>
+<h5 id="sea_1">Sea<a class="headerlink" href="#sea_1" title="Permanent link">&para;</a></h5>
+<p>You gain resistance to lightning damage, and you can breathe underwater. You also gain a swimming speed of 30 feet.</p>
+<h5 id="tundra_1">Tundra<a class="headerlink" href="#tundra_1" title="Permanent link">&para;</a></h5>
+<p>You gain resistance to cold damage, and you don’t suffer the effects of extreme cold, as described in the <em><a href="https://www.dndbeyond.com/sources/dmg" title="Dungeon Master’s Guide">Dungeon Master’s Guide</a></em>. Moreover, as an action, you can touch water and turn a 5-foot cube of it into ice, which melts after 1 minute. This action fails if a creature is in the cube.</p>
+<h4 id="shielding-storm">Shielding Storm<a class="headerlink" href="#shielding-storm" title="Permanent link">&para;</a></h4>
+<p>At 10th level, you learn to use your mastery of the storm to protect others. Each creature of your choice has the damage resistance you gained from the Storm Soul feature while the creature is in your Storm Aura.</p>
+<h4 id="raging-storm">Raging Storm<a class="headerlink" href="#raging-storm" title="Permanent link">&para;</a></h4>
+<p>At 14th level, the power of the storm you channel grows mightier, lashing out at your foes. The effect is based on the environment you chose for your Storm Aura.</p>
+<h5 id="desert_2">Desert<a class="headerlink" href="#desert_2" title="Permanent link">&para;</a></h5>
+<p>Immediately after a creature in your aura hits you with an attack, you can use your reaction to force that creature to make a Dexterity saving throw. On a failed save, the creature takes fire damage equal to half your barbarian level.</p>
+<h5 id="sea_2">Sea<a class="headerlink" href="#sea_2" title="Permanent link">&para;</a></h5>
+<p>When you hit a creature in your aura with an attack, you can use your reaction to force that creature to make a Strength saving throw. On a failed save, the creature is knocked prone, as if struck by a wave.</p>
+<h5 id="tundra_2">Tundra<a class="headerlink" href="#tundra_2" title="Permanent link">&para;</a></h5>
+<p>Whenever the effect of your Storm Aura is activated, you can choose one creature you can see in the aura. That creature must succeed on a Strength saving throw, or its speed is reduced to 0 until the start of your next turn, as magical frost covers it.</p>
+<h2 id="path-of-the-totem-warrior">Path of the Totem Warrior<a class="headerlink" href="#path-of-the-totem-warrior" title="Permanent link">&para;</a></h2>
+<p>The Path of the Totem Warrior is a spiritual journey, as the barbarian accepts a spirit animal as guide, protector, and inspiration. In battle, your totem spirit fills you with supernatural might, adding magical fuel to your barbarian rage.</p>
+<p>In some barbarians’ tribes, a totem animal is considered to be kin to a particular clan. In such cases, it is unusual for an individual to have more than one totem animal spirit, though exceptions exist.</p>
+<h4 id="spirit-seeker">Spirit Seeker<a class="headerlink" href="#spirit-seeker" title="Permanent link">&para;</a></h4>
+<p>Yours is a path that seeks attunement with the natural world, giving you a kinship with beasts. At 3rd level when you adopt this path, you gain the ability to cast the <a href="https://www.dndbeyond.com/spells/beast-sense">beast sense</a> and <a href="https://www.dndbeyond.com/spells/speak-with-animals">speak with animals</a> spells, but only as rituals, as described in the <a href="http://www.dndbeyond.com/compendium/rules/phb/spellcasting#Rituals" title="Rituals">Spellcasting</a> section.</p>
+<h4 id="totem-spirit">Totem Spirit<a class="headerlink" href="#totem-spirit" title="Permanent link">&para;</a></h4>
+<p>At 3rd level, when you adopt this path, you choose a totem spirit and gain its feature. You must make or acquire a physical totem object — an amulet or similar adornment — that incorporates fur or feathers, claws, teeth, or bones of the totem animal. At your option, you also gain minor physical attributes that are reminiscent of your totem spirit. For example, if you have a bear totem spirit, you might be unusually hairy and thick-skinned, or if your totem is the eagle, your eyes turn bright yellow.</p>
+<p>Your totem animal might be an animal related to those listed here but more appropriate to your homeland. For example, you could choose a hawk or vulture in place of an eagle.</p>
+<h5 id="bear">Bear<a class="headerlink" href="#bear" title="Permanent link">&para;</a></h5>
+<p>While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment.</p>
+<h5 id="eagle">Eagle<a class="headerlink" href="#eagle" title="Permanent link">&para;</a></h5>
+<p>While you’re raging, other creatures have disadvantage on opportunity attack rolls against you, and you can use the <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/combat#Dash">Dash</a> action as a bonus action on your turn. The spirit of the eagle makes you into a predator who can weave through the fray with ease.</p>
+<h5 id="elk">Elk<a class="headerlink" href="#elk" title="Permanent link">&para;</a></h5>
+<p>While you are raging and aren't wearing heavy armor, your walking speed increases by 15 feet. The spirit of the elk makes you extraordinarily swift.</p>
+<h5 id="tiger">Tiger<a class="headerlink" href="#tiger" title="Permanent link">&para;</a></h5>
+<p>While raging, you can add 10 feet to your long jump distance and 3 feet to your high jump distance. The spirit of the tiger empowers your leaps.</p>
+<h5 id="wolf">Wolf<a class="headerlink" href="#wolf" title="Permanent link">&para;</a></h5>
+<p>While you’re raging, your friends have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you. The spirit of the wolf makes you a leader of hunters.</p>
+<h4 id="aspect-of-the-beast">Aspect of the Beast<a class="headerlink" href="#aspect-of-the-beast" title="Permanent link">&para;</a></h4>
+<p>At 6th level, you gain a magical benefit based on the totem animal of your choice. You can choose the same animal you selected at 3rd level or a different one.</p>
+<h5 id="bear_1">Bear<a class="headerlink" href="#bear_1" title="Permanent link">&para;</a></h5>
+<p>You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift) is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects.</p>
+<h5 id="eagle_1">Eagle<a class="headerlink" href="#eagle_1" title="Permanent link">&para;</a></h5>
+<p>You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Additionally, dim light doesn’t impose disadvantage on your Wisdom (<a href="https://www.dndbeyond.com/compendium/rules/basic-rules/using-ability-scores#Perception">Perception</a>) checks.</p>
+<h5 id="elk_1">Elk<a class="headerlink" href="#elk_1" title="Permanent link">&para;</a></h5>
+<p>Whether mounted or on foot, your travel pace is doubled, as is the travel pace of up to ten companions while they’re within 60 feet of you and you’re not <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Incapacitated">incapacitated</a> (see “<a href="http://www.dndbeyond.com/compendium/rules/phb/adventuring#TravelPace">Adventuring</a>,” for rules on travel pace). The elk spirit helps you roam far and fast.</p>
+<h5 id="tiger_1">Tiger<a class="headerlink" href="#tiger_1" title="Permanent link">&para;</a></h5>
+<p>You gain proficiency in two skills from the following list: <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/using-ability-scores#Athletics">Athletics</a>, <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/using-ability-scores#Acrobatics">Acrobatics</a>, <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/using-ability-scores#Stealth">Stealth</a>, and <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/using-ability-scores#Survival">Survival</a>. The cat spirit hones your survival instincts.</p>
+<h5 id="wolf_1">Wolf<a class="headerlink" href="#wolf_1" title="Permanent link">&para;</a></h5>
+<p>You gain the hunting sensibilities of a wolf. You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace (see “<a href="http://www.dndbeyond.com/compendium/rules/phb/adventuring#TravelPace">Adventuring</a>,” for rules on travel pace).</p>
+<h4 id="spirit-walker">Spirit Walker<a class="headerlink" href="#spirit-walker" title="Permanent link">&para;</a></h4>
+<p>At 10th level, you can cast the <a href="https://www.dndbeyond.com/spells/commune-with-nature">commune with nature</a> spell, but only as a ritual. When you do so, a spiritual version of one of the animals you chose for Totem Spirit or Aspect of the Beast appears to you to convey the information you seek.</p>
+<h4 id="totemic-attunement">Totemic Attunement<a class="headerlink" href="#totemic-attunement" title="Permanent link">&para;</a></h4>
+<p>At 14th level, you gain a magical benefit based on a totem animal of your choice. You can choose the same animal you selected previously or a different one.</p>
+<h5 id="bear_2">Bear<a class="headerlink" href="#bear_2" title="Permanent link">&para;</a></h5>
+<p>While you’re raging, any creature within 5 feet of you that’s hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it can’t see or hear you or if it can’t be <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Frightened">frightened</a>.</p>
+<h5 id="eagle_2">Eagle<a class="headerlink" href="#eagle_2" title="Permanent link">&para;</a></h5>
+<p>While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft.</p>
+<h5 id="elk_2">Elk<a class="headerlink" href="#elk_2" title="Permanent link">&para;</a></h5>
+<p>While raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength saving throw (DC 8 + your Strength bonus + your proficiency bonus) or be knocked <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Prone">prone</a> and take bludgeoning damage equal to 1d12 + your Strength modifier.</p>
+<h5 id="tiger_2">Tiger<a class="headerlink" href="#tiger_2" title="Permanent link">&para;</a></h5>
+<p>While you’re raging, if you move at least 20 feet in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it.</p>
+<h5 id="wolf_2">Wolf<a class="headerlink" href="#wolf_2" title="Permanent link">&para;</a></h5>
+<p>While you’re raging, you can use a bonus action on your turn to knock a Large or smaller creature <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Prone">prone</a> when you hit it with melee weapon attack.</p>
+<h2 id="path-of-the-zealot">Path of the Zealot<a class="headerlink" href="#path-of-the-zealot" title="Permanent link">&para;</a></h2>
+<p>Some deities inspire their followers to pitch themselves into a ferocious battle fury. These barbarians are zealots — warriors who channel their rage into powerful displays of divine power.</p>
+<p>A variety of gods across the worlds of D&amp;D inspire their followers to embrace this path. Tempus from the Forgotten Realms and Hextor and Erythnul of Greyhawk are all prime examples. In general, the gods who inspire zealots are deities of combat, destruction, and violence. Not all are evil, but few are good.</p>
+<table>
+<thead>
+<tr>
+<th>Barbarian Level</th>
+<th>Feature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3rd</td>
+<td>Divine Fury, Warrior of the Gods</td>
+</tr>
+<tr>
+<td>6th</td>
+<td>Fanatical Focus</td>
+</tr>
+<tr>
+<td>10th</td>
+<td>Zealous Presence</td>
+</tr>
+<tr>
+<td>14th</td>
+<td>Rage beyond Death</td>
+</tr>
+</tbody>
+</table>
+<h4 id="divine-fury">Divine Fury<a class="headerlink" href="#divine-fury" title="Permanent link">&para;</a></h4>
+<p>Starting when you choose this path at 3rd level, you can channel divine fury into your weapon strikes. While you’re raging, the first creature you hit on each of your turns with a weapon attack takes extra damage equal to 1d6 + half your barbarian level. The extra damage is necrotic or radiant; you choose the type of damage when you gain this feature.</p>
+<h4 id="warrior-of-the-gods">Warrior of the Gods<a class="headerlink" href="#warrior-of-the-gods" title="Permanent link">&para;</a></h4>
+<p>At 3rd level, your soul is marked for endless battle. If a spell, such as <a href="https://www.dndbeyond.com/spells/raise-dead">raise dead</a>, has the sole effect of restoring you to life (but not undeath), the caster doesn’t need material components to cast the spell on you.</p>
+<h4 id="fanatical-focus">Fanatical Focus<a class="headerlink" href="#fanatical-focus" title="Permanent link">&para;</a></h4>
+<p>Starting at 6th level, the divine power that fuels your rage can protect you. If you fail a saving throw while you’re raging, you can reroll it, and you must use the new roll. You can use this ability only once per rage.</p>
+<h4 id="zealous-presence">Zealous Presence<a class="headerlink" href="#zealous-presence" title="Permanent link">&para;</a></h4>
+<p>At 10th level, you learn to channel divine power to inspire zealotry in others. As a bonus action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you that can hear you gain advantage on attack rolls and saving throws until the start of your next turn.</p>
+<p>Once you use this feature, you can’t use it again until you finish a long rest.</p>
+<h4 id="rage-beyond-death">Rage beyond Death<a class="headerlink" href="#rage-beyond-death" title="Permanent link">&para;</a></h4>
+<p>Beginning at 14th level, the divine power that fuels your rage allows you to shrug off fatal blows.</p>
+<p>While you’re raging, having 0 hit points doesn’t knock you <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Unconscious">unconscious</a>. You still must make death saving throws, and you suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don’t die until your rage ends, and you die then only if you still have 0 hit points.</p>
+<h2 id="path-of-wild-magic">Path of Wild Magic<a class="headerlink" href="#path-of-wild-magic" title="Permanent link">&para;</a></h2>
+<p>Many places in the multiverse abound with beauty, intense emotion, and rampant magic; the Feywild, the Upper Planes, and other realms of supernatural power radiate with such forces and can profoundly influence people. As folk of deep feeling, barbarians are especially susceptible to these wild influences, with some barbarians being transformed by the magic. These magic-suffused barbarians walk the Path of Wild Magic. Elf, tiefling, aasimar, and genasi barbarians often seek this path, eager to manifest the otherworldly magic of their ancestors.</p>
+<h4 id="magic-awareness">Magic Awareness<a class="headerlink" href="#magic-awareness" title="Permanent link">&para;</a></h4>
+<p><em>3rd-level Path of Wild Magic feature</em></p>
+<p>As an action, you can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 60 feet of you that isn’t behind total cover. When you sense a spell, you learn which school of magic it belongs to.</p>
+<p>You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+<h4 id="wild-surge">Wild Surge<a class="headerlink" href="#wild-surge" title="Permanent link">&para;</a></h4>
+<p><em>3rd-level Path of Wild Magic feature</em></p>
+<p>The magical energy roiling inside you sometimes erupts from you. When you enter your rage, roll on the Wild Magic table to determine the magical effect produced.</p>
+<p>If the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.</p>
+<table>
+<thead>
+<tr>
+<th>d8</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Shadowy tendrils lash around you. Each creature of your choice that you can see within 30 feet of you must succeed on a Constitution saving throw or take 1d12 necrotic damage. You also gain 1d12 temporary hit points.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>You teleport up to 30 feet to an unoccupied space you can see. Until your rage ends, you can use this effect again on each of your turns as a bonus action.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>An intangible spirit, which looks like a flumph or a pixie (your choice), appears within 5 feet of one creature of your choice that you can see within 30 feet of you. At the end of the current turn, the spirit explodes, and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 1d6 force damage. Until your rage ends, you can use this effect again, summoning another spirit, on each of your turns as a bonus action.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Magic infuses one weapon of your choice that you are holding. Until your rage ends, the weapon’s damage type changes to force, and it gains the <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/equipment#WeaponProperties">light</a> and <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/equipment#WeaponProperties">thrown</a> properties, with a normal range of 20 feet and a long range of 60 feet. If the weapon leaves your hand, the weapon reappears in your hand at the end of the current turn.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Whenever a creature hits you with an attack roll before your rage ends, that creature takes 1d6 force damage, as magic lashes out in retribution.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Until your rage ends, you are surrounded by multicolored, protective lights; you gain a +1 bonus to AC, and while within 10 feet of you, your allies gain the same bonus.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Flowers and vines temporarily grow around you; until your rage ends, the ground within 15 feet of you is difficult terrain for your enemies.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>A bolt of light shoots from your chest. Another creature of your choice that you can see within 30 feet of you must succeed on a Constitution saving throw or take 1d6 radiant damage and be <a href="https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Blinded">blinded</a> until the start of your next turn. Until your rage ends, you can use this effect again on each of your turns as a bonus action.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="bolstering-magic">Bolstering Magic<a class="headerlink" href="#bolstering-magic" title="Permanent link">&para;</a></h4>
+<p><em>6th-level Path of Wild Magic feature</em></p>
+<p>You can harness your wild magic to bolster yourself or a companion. As an action, you can touch one creature (which can be yourself) and confer one of the following benefits of your choice to that creature:</p>
+<ul>
+<li>For 10 minutes, the creature can roll a d3 whenever making an attack roll or an ability check and add the number rolled to the d20 roll.</li>
+<li>Roll a d3. The creature regains one expended spell slot, the level of which equals the number rolled or lower (the creature’s choice). Once a creature receives this benefit, that creature can’t receive it again until after a long rest.</li>
+</ul>
+<p>You can take this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+<h4 id="unstable-backlash">Unstable Backlash<a class="headerlink" href="#unstable-backlash" title="Permanent link">&para;</a></h4>
+<p><em>10th-level Path of Wild Magic feature</em></p>
+<p>When you are imperiled during your rage, the magic within you can lash out; immediately after you take damage or fail a saving throw while raging, you can use your reaction to roll on the Wild Magic table and immediately produce the effect rolled. This effect replaces your current Wild Magic effect.</p>
+<h4 id="controlled-surge">Controlled Surge<a class="headerlink" href="#controlled-surge" title="Permanent link">&para;</a></h4>
+<p><em>14th-level Path of Wild Magic feature</em></p>
+<p>Whenever you roll on the Wild Magic table, you can roll the die twice and choose which of the two effects to unleash. If you roll the same number on both dice, you can ignore the number and choose any effect on the table.</p>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
+<h2 id="voies-primitives">Voies primitives<a class="headerlink" href="#voies-primitives" title="Permanent link">&para;</a></h2>
+<h3 id="voie-du-gardien-ancestral">Voie du gardien ancestral<a class="headerlink" href="#voie-du-gardien-ancestral" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-fou-de-guerre">Voie du fou de guerre<a class="headerlink" href="#voie-du-fou-de-guerre" title="Permanent link">&para;</a></h3>
+<h3 id="voie-de-la-bete">voie de la bête<a class="headerlink" href="#voie-de-la-bete" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-berserker">voie du berserker<a class="headerlink" href="#voie-du-berserker" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-heraut-des-tempetees">voie du héraut des tempêtees<a class="headerlink" href="#voie-du-heraut-des-tempetees" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-guerrier-totemique">voie du guerrier totémique<a class="headerlink" href="#voie-du-guerrier-totemique" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-fanatique">voie du fanatique<a class="headerlink" href="#voie-du-fanatique" title="Permanent link">&para;</a></h3>
+<h3 id="voie-de-la-magie-sauvage">voie de la magie sauvage<a class="headerlink" href="#voie-de-la-magie-sauvage" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-maudit">voie du maudit<a class="headerlink" href="#voie-du-maudit" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-lunatique">voie du lunatique<a class="headerlink" href="#voie-du-lunatique" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-tonneau">voie du tonneau<a class="headerlink" href="#voie-du-tonneau" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-fleau">voie du fléau<a class="headerlink" href="#voie-du-fleau" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-colosse">voie du colosse<a class="headerlink" href="#voie-du-colosse" title="Permanent link">&para;</a></h3>
+<h3 id="voie-de-laileron">voie de l'aileron<a class="headerlink" href="#voie-de-laileron" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-heavy-metal">voie du heavy metal<a class="headerlink" href="#voie-du-heavy-metal" title="Permanent link">&para;</a></h3>
+<h3 id="voie-de-mashle">voie de mashle<a class="headerlink" href="#voie-de-mashle" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-mage-rageur">voie du mage rageur<a class="headerlink" href="#voie-du-mage-rageur" title="Permanent link">&para;</a></h3>
+<h3 id="voie-de-la-serenite">voie de la sérénité<a class="headerlink" href="#voie-de-la-serenite" title="Permanent link">&para;</a></h3>
+<h1 id="barde">Barde<a class="headerlink" href="#barde" title="Permanent link">&para;</a></h1>
+<h2 id="description_1">description<a class="headerlink" href="#description_1" title="Permanent link">&para;</a></h2>
+<h2 id="colleges-bardiques">collèges bardiques<a class="headerlink" href="#colleges-bardiques" title="Permanent link">&para;</a></h2>
+<h3 id="college-de-la-creation">collège de la création<a class="headerlink" href="#college-de-la-creation" title="Permanent link">&para;</a></h3>
+<h3 id="college-de-leloquence">collège de l'éloquence<a class="headerlink" href="#college-de-leloquence" title="Permanent link">&para;</a></h3>
+<h3 id="college-du-charme">collège du charme<a class="headerlink" href="#college-du-charme" title="Permanent link">&para;</a></h3>
+<h3 id="college-du-savoir">collège du savoir<a class="headerlink" href="#college-du-savoir" title="Permanent link">&para;</a></h3>
+<h3 id="college-des-epees">collège des épées<a class="headerlink" href="#college-des-epees" title="Permanent link">&para;</a></h3>
+<h3 id="college-de-la-vaillance">collège de la vaillance<a class="headerlink" href="#college-de-la-vaillance" title="Permanent link">&para;</a></h3>
+<h3 id="college-des-rumeurs">collège des rumeurs<a class="headerlink" href="#college-des-rumeurs" title="Permanent link">&para;</a></h3>
+<h3 id="college-des-cantateurs">collège des cantateurs<a class="headerlink" href="#college-des-cantateurs" title="Permanent link">&para;</a></h3>
+<h3 id="college-des-graffitis">collège des graffitis<a class="headerlink" href="#college-des-graffitis" title="Permanent link">&para;</a></h3>
+<h3 id="college-des-bouffons">collège des bouffons<a class="headerlink" href="#college-des-bouffons" title="Permanent link">&para;</a></h3>
+<h3 id="college-du-dieu-fou">collège du dieu fou<a class="headerlink" href="#college-du-dieu-fou" title="Permanent link">&para;</a></h3>
+<h3 id="college-des-masques">collège des masques<a class="headerlink" href="#college-des-masques" title="Permanent link">&para;</a></h3>
+<h3 id="college-de-la-romance">collège de la romance<a class="headerlink" href="#college-de-la-romance" title="Permanent link">&para;</a></h3>
+<h3 id="college-du-portrait">collège du portrait<a class="headerlink" href="#college-du-portrait" title="Permanent link">&para;</a></h3>
+<h3 id="college-des-annonciateurs">collège des annonciateurs<a class="headerlink" href="#college-des-annonciateurs" title="Permanent link">&para;</a></h3>
+<h3 id="college-des-barmans">collège des barmans<a class="headerlink" href="#college-des-barmans" title="Permanent link">&para;</a></h3>
+<h1 id="clerc">Clerc<a class="headerlink" href="#clerc" title="Permanent link">&para;</a></h1>
+<h2 id="description_2">description<a class="headerlink" href="#description_2" title="Permanent link">&para;</a></h2>
+<h2 id="domaines">Domaines<a class="headerlink" href="#domaines" title="Permanent link">&para;</a></h2>
+<h3 id="domaine-arcanique">Domaine arcanique<a class="headerlink" href="#domaine-arcanique" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-de-la-mort">domaine de la mort<a class="headerlink" href="#domaine-de-la-mort" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-de-la-forge">domaine de la forge<a class="headerlink" href="#domaine-de-la-forge" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-de-la-tombe">domaine de la tombe<a class="headerlink" href="#domaine-de-la-tombe" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-de-la-connaissance">domaine de la connaissance<a class="headerlink" href="#domaine-de-la-connaissance" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-de-la-vie">domaine de la vie<a class="headerlink" href="#domaine-de-la-vie" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-de-la-lumiere">domaine de la lumière<a class="headerlink" href="#domaine-de-la-lumiere" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-de-la-nature">domaine de la nature<a class="headerlink" href="#domaine-de-la-nature" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-de-lordre">domaine de l'ordre<a class="headerlink" href="#domaine-de-lordre" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-de-la-paix">domaine de la paix<a class="headerlink" href="#domaine-de-la-paix" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-de-la-tempete">domaine de la tempête<a class="headerlink" href="#domaine-de-la-tempete" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-de-la-tromperie">domaine de la tromperie<a class="headerlink" href="#domaine-de-la-tromperie" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-du-crepuscule">domaine du crépuscule<a class="headerlink" href="#domaine-du-crepuscule" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-de-la-guerre">domaine de la guerre<a class="headerlink" href="#domaine-de-la-guerre" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-de-la-destruction">domaine de la destruction<a class="headerlink" href="#domaine-de-la-destruction" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-de-la-folie">domaine de la folie<a class="headerlink" href="#domaine-de-la-folie" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-de-la-peste">domaine de la peste<a class="headerlink" href="#domaine-de-la-peste" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-du-rhum">domaine du rhum<a class="headerlink" href="#domaine-du-rhum" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-du-voyage">domaine du voyage<a class="headerlink" href="#domaine-du-voyage" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-de-la-richesse">domaine de la richesse<a class="headerlink" href="#domaine-de-la-richesse" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-du-cafe">Domaine du café<a class="headerlink" href="#domaine-du-cafe" title="Permanent link">&para;</a></h3>
+<h3 id="domaine-du-changement">domaine du changement<a class="headerlink" href="#domaine-du-changement" title="Permanent link">&para;</a></h3>
+<h1 id="druide">Druide<a class="headerlink" href="#druide" title="Permanent link">&para;</a></h1>
+<h2 id="description_3">Description<a class="headerlink" href="#description_3" title="Permanent link">&para;</a></h2>
+<h2 id="cercles">cercles<a class="headerlink" href="#cercles" title="Permanent link">&para;</a></h2>
+<h3 id="cercle-des-reves">Cercle des rêves<a class="headerlink" href="#cercle-des-reves" title="Permanent link">&para;</a></h3>
+<h3 id="cercle-des-spores">Cercle des spores<a class="headerlink" href="#cercle-des-spores" title="Permanent link">&para;</a></h3>
+<h3 id="cercle-des-etoiles">cercle des étoiles<a class="headerlink" href="#cercle-des-etoiles" title="Permanent link">&para;</a></h3>
+<h3 id="cercle-de-la-terre">cercle de la terre<a class="headerlink" href="#cercle-de-la-terre" title="Permanent link">&para;</a></h3>
+<h3 id="cercle-de-la-lune">cercle de la lune<a class="headerlink" href="#cercle-de-la-lune" title="Permanent link">&para;</a></h3>
+<h3 id="cercle-des-bergers">cercle des bergers<a class="headerlink" href="#cercle-des-bergers" title="Permanent link">&para;</a></h3>
+<h3 id="cercle-de-lincendie">cercle de l'incendie<a class="headerlink" href="#cercle-de-lincendie" title="Permanent link">&para;</a></h3>
+<h3 id="cercle-de-moonshine">cercle de moonshine<a class="headerlink" href="#cercle-de-moonshine" title="Permanent link">&para;</a></h3>
+<h3 id="cercle-de-la-ville">cercle de la ville<a class="headerlink" href="#cercle-de-la-ville" title="Permanent link">&para;</a></h3>
+<h3 id="cercle-des-profondeurs">cercle des profondeurs<a class="headerlink" href="#cercle-des-profondeurs" title="Permanent link">&para;</a></h3>
+<h3 id="cercle-du-poing">cercle du poing<a class="headerlink" href="#cercle-du-poing" title="Permanent link">&para;</a></h3>
+<h3 id="cercle-des-cailloux">cercle des cailloux<a class="headerlink" href="#cercle-des-cailloux" title="Permanent link">&para;</a></h3>
+<h3 id="cercle-de-la-vermine">cercle de la vermine<a class="headerlink" href="#cercle-de-la-vermine" title="Permanent link">&para;</a></h3>
+<h3 id="cercle-de-la-wyrm">cercle de la wyrm<a class="headerlink" href="#cercle-de-la-wyrm" title="Permanent link">&para;</a></h3>
+<h1 id="guerrier">Guerrier<a class="headerlink" href="#guerrier" title="Permanent link">&para;</a></h1>
+<h2 id="description_4">Description<a class="headerlink" href="#description_4" title="Permanent link">&para;</a></h2>
+<h2 id="archetypes-martiaux">Archétypes martiaux<a class="headerlink" href="#archetypes-martiaux" title="Permanent link">&para;</a></h2>
+<h3 id="archer-arcanique">archer arcanique<a class="headerlink" href="#archer-arcanique" title="Permanent link">&para;</a></h3>
+<h3 id="maitre-de-guerre">Maître de guerre<a class="headerlink" href="#maitre-de-guerre" title="Permanent link">&para;</a></h3>
+<h3 id="cavalier">Cavalier<a class="headerlink" href="#cavalier" title="Permanent link">&para;</a></h3>
+<h3 id="champion">Champion<a class="headerlink" href="#champion" title="Permanent link">&para;</a></h3>
+<h3 id="chevalier-eldricht">Chevalier eldricht<a class="headerlink" href="#chevalier-eldricht" title="Permanent link">&para;</a></h3>
+<h3 id="flingueur">Flingueur<a class="headerlink" href="#flingueur" title="Permanent link">&para;</a></h3>
+<h3 id="guerrier-psi">Guerrier psi<a class="headerlink" href="#guerrier-psi" title="Permanent link">&para;</a></h3>
+<h3 id="chevalier-du-dragon-violet">Chevalier du Dragon Violet<a class="headerlink" href="#chevalier-du-dragon-violet" title="Permanent link">&para;</a></h3>
+<h3 id="chevalier-runique">Chevalier runique<a class="headerlink" href="#chevalier-runique" title="Permanent link">&para;</a></h3>
+<h3 id="samurai">Samurai<a class="headerlink" href="#samurai" title="Permanent link">&para;</a></h3>
+<h3 id="chevalier-dos">Chevalier d'os<a class="headerlink" href="#chevalier-dos" title="Permanent link">&para;</a></h3>
+<h3 id="bagarreur">Bagarreur<a class="headerlink" href="#bagarreur" title="Permanent link">&para;</a></h3>
+<h3 id="lancier-celeste">Lancier céleste<a class="headerlink" href="#lancier-celeste" title="Permanent link">&para;</a></h3>
+<h3 id="corsaire">Corsaire<a class="headerlink" href="#corsaire" title="Permanent link">&para;</a></h3>
+<h3 id="explorateur-de-donjons">Explorateur de donjons<a class="headerlink" href="#explorateur-de-donjons" title="Permanent link">&para;</a></h3>
+<h3 id="expert-en-main-de-mage">expert en main de mage<a class="headerlink" href="#expert-en-main-de-mage" title="Permanent link">&para;</a></h3>
+<h3 id="monument-intemporel">Monument intemporel<a class="headerlink" href="#monument-intemporel" title="Permanent link">&para;</a></h3>
+<h3 id="dissonant">dissonant<a class="headerlink" href="#dissonant" title="Permanent link">&para;</a></h3>
+<h1 id="moine">Moine<a class="headerlink" href="#moine" title="Permanent link">&para;</a></h1>
+<h2 id="description_5">Description<a class="headerlink" href="#description_5" title="Permanent link">&para;</a></h2>
+<h2 id="traditions-monastiques">Traditions monastiques<a class="headerlink" href="#traditions-monastiques" title="Permanent link">&para;</a></h2>
+<h3 id="voie-de-la-pitie">Voie de la pitié<a class="headerlink" href="#voie-de-la-pitie" title="Permanent link">&para;</a></h3>
+<h3 id="voie-de-lombre">Voie de l'ombre<a class="headerlink" href="#voie-de-lombre" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-dragon-ascendant">Voie du dragon ascendant<a class="headerlink" href="#voie-du-dragon-ascendant" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-soi-astral">voie du soi astral<a class="headerlink" href="#voie-du-soi-astral" title="Permanent link">&para;</a></h3>
+<h3 id="voie-de-lame-du-cobra">voie de l'âme du cobra<a class="headerlink" href="#voie-de-lame-du-cobra" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-maitre-ivre">voie du maître ivre<a class="headerlink" href="#voie-du-maitre-ivre" title="Permanent link">&para;</a></h3>
+<h3 id="voie-des-quatre-elements">voie des quatre éléments<a class="headerlink" href="#voie-des-quatre-elements" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-kensei">voie du kensei<a class="headerlink" href="#voie-du-kensei" title="Permanent link">&para;</a></h3>
+<h3 id="voie-de-la-mort-longue">voie de la mort longue<a class="headerlink" href="#voie-de-la-mort-longue" title="Permanent link">&para;</a></h3>
+<h3 id="voie-de-la-paume">Voie de la paume<a class="headerlink" href="#voie-de-la-paume" title="Permanent link">&para;</a></h3>
+<h3 id="voie-de-lame-du-soleil">voie de l'âme du soleil<a class="headerlink" href="#voie-de-lame-du-soleil" title="Permanent link">&para;</a></h3>
+<h3 id="voie-de-letoile-noire">voie de l'étoile noire<a class="headerlink" href="#voie-de-letoile-noire" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-serpent-noble">voie du serpent noble<a class="headerlink" href="#voie-du-serpent-noble" title="Permanent link">&para;</a></h3>
+<h3 id="voie-de-larc">voie de l'arc<a class="headerlink" href="#voie-de-larc" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-flagellant">voie du flagellant<a class="headerlink" href="#voie-du-flagellant" title="Permanent link">&para;</a></h3>
+<h3 id="voie-des-quatre-poings">voie des quatre poings<a class="headerlink" href="#voie-des-quatre-poings" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-masque">voie du masque<a class="headerlink" href="#voie-du-masque" title="Permanent link">&para;</a></h3>
+<h3 id="voie-de-la-rose">voie de la rose<a class="headerlink" href="#voie-de-la-rose" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-combat-de-rue">voie du combat de rue<a class="headerlink" href="#voie-du-combat-de-rue" title="Permanent link">&para;</a></h3>
+<h3 id="voie-du-poing-ivre">voie du poing ivre<a class="headerlink" href="#voie-du-poing-ivre" title="Permanent link">&para;</a></h3>
+<h1 id="paladin">Paladin<a class="headerlink" href="#paladin" title="Permanent link">&para;</a></h1>
+<h2 id="description_6">Description<a class="headerlink" href="#description_6" title="Permanent link">&para;</a></h2>
+<h2 id="serments-sacres">Serments sacrés<a class="headerlink" href="#serments-sacres" title="Permanent link">&para;</a></h2>
+<h3 id="serment-de-conquete">Serment de conquête<a class="headerlink" href="#serment-de-conquete" title="Permanent link">&para;</a></h3>
+<h3 id="serment-de-devotion">Serment de dévotion<a class="headerlink" href="#serment-de-devotion" title="Permanent link">&para;</a></h3>
+<h3 id="serment-de-gloire">Serment de gloire<a class="headerlink" href="#serment-de-gloire" title="Permanent link">&para;</a></h3>
+<h3 id="serment-de-redemption">Serment de Rédemption<a class="headerlink" href="#serment-de-redemption" title="Permanent link">&para;</a></h3>
+<h3 id="serment-des-anciens">Serment des Anciens<a class="headerlink" href="#serment-des-anciens" title="Permanent link">&para;</a></h3>
+<h3 id="serment-de-la-couronne">Serment de la couronne<a class="headerlink" href="#serment-de-la-couronne" title="Permanent link">&para;</a></h3>
+<h3 id="serment-de-la-haute-mer">Serment de la haute-Mer<a class="headerlink" href="#serment-de-la-haute-mer" title="Permanent link">&para;</a></h3>
+<h3 id="serment-des-sentinelles">Serment des Sentinelles<a class="headerlink" href="#serment-des-sentinelles" title="Permanent link">&para;</a></h3>
+<h3 id="serment-de-vengance">Serment de vengance<a class="headerlink" href="#serment-de-vengance" title="Permanent link">&para;</a></h3>
+<h3 id="briseur-de-serment">Briseur de serment<a class="headerlink" href="#briseur-de-serment" title="Permanent link">&para;</a></h3>
+<h3 id="serment-davarice">Serment d'avarice<a class="headerlink" href="#serment-davarice" title="Permanent link">&para;</a></h3>
+<h3 id="serment-de-jugement">Serment de jugement<a class="headerlink" href="#serment-de-jugement" title="Permanent link">&para;</a></h3>
+<h3 id="serment-de-rejouissance">Serment de réjouissance<a class="headerlink" href="#serment-de-rejouissance" title="Permanent link">&para;</a></h3>
+<h3 id="serment-de-la-nuit-eternelle">Serment de la nuit éternelle<a class="headerlink" href="#serment-de-la-nuit-eternelle" title="Permanent link">&para;</a></h3>
+<h3 id="serment-dheresie">Serment d'hérésie<a class="headerlink" href="#serment-dheresie" title="Permanent link">&para;</a></h3>
+<h3 id="serment-des-tempetes">Serment des tempêtes<a class="headerlink" href="#serment-des-tempetes" title="Permanent link">&para;</a></h3>
+<h3 id="serment-du-soleil">Serment du soleil<a class="headerlink" href="#serment-du-soleil" title="Permanent link">&para;</a></h3>
+<h3 id="serment-de-lhiver">Serment de l'hiver<a class="headerlink" href="#serment-de-lhiver" title="Permanent link">&para;</a></h3>
+<h1 id="rodeur">Rôdeur<a class="headerlink" href="#rodeur" title="Permanent link">&para;</a></h1>
+<h2 id="description_7">Description<a class="headerlink" href="#description_7" title="Permanent link">&para;</a></h2>
+<h2 id="archetypes-de-rodeurs">Archétypes de rôdeurs<a class="headerlink" href="#archetypes-de-rodeurs" title="Permanent link">&para;</a></h2>
+<h3 id="maitre-des-betes">maître des bêtes<a class="headerlink" href="#maitre-des-betes" title="Permanent link">&para;</a></h3>
+<h3 id="gardien-de-drake">Gardien de Drake<a class="headerlink" href="#gardien-de-drake" title="Permanent link">&para;</a></h3>
+<h3 id="vagabond-feerique">Vagabond féérique<a class="headerlink" href="#vagabond-feerique" title="Permanent link">&para;</a></h3>
+<h3 id="embuscade-obscur">Embuscade obscur<a class="headerlink" href="#embuscade-obscur" title="Permanent link">&para;</a></h3>
+<h3 id="arpenteur-de-lhorizon">Arpenteur de l'horizon<a class="headerlink" href="#arpenteur-de-lhorizon" title="Permanent link">&para;</a></h3>
+<h3 id="chasseur">Chasseur<a class="headerlink" href="#chasseur" title="Permanent link">&para;</a></h3>
+<h3 id="tueur-de-monstres">Tueur de monstres<a class="headerlink" href="#tueur-de-monstres" title="Permanent link">&para;</a></h3>
+<h3 id="gardien-des-nuees">Gardien des nuées<a class="headerlink" href="#gardien-des-nuees" title="Permanent link">&para;</a></h3>
+<h3 id="pilleur-de-tombes">Pilleur de tombes<a class="headerlink" href="#pilleur-de-tombes" title="Permanent link">&para;</a></h3>
+<h3 id="molosse-du-chasseur">molosse du chasseur<a class="headerlink" href="#molosse-du-chasseur" title="Permanent link">&para;</a></h3>
+<h3 id="ne-des-betes">Né des bêtes<a class="headerlink" href="#ne-des-betes" title="Permanent link">&para;</a></h3>
+<h3 id="courreur">Courreur<a class="headerlink" href="#courreur" title="Permanent link">&para;</a></h3>
+<h3 id="bandit-de-grands-chemins">Bandit de grands chemins<a class="headerlink" href="#bandit-de-grands-chemins" title="Permanent link">&para;</a></h3>
+<h3 id="casseur-de-sorts">Casseur de sorts<a class="headerlink" href="#casseur-de-sorts" title="Permanent link">&para;</a></h3>
+<h3 id="chasseur-de-trophees">Chasseur de trophées<a class="headerlink" href="#chasseur-de-trophees" title="Permanent link">&para;</a></h3>
+<h3 id="vigilante">Vigilante<a class="headerlink" href="#vigilante" title="Permanent link">&para;</a></h3>
+<h3 id="lame-dargent">Lame d'argent<a class="headerlink" href="#lame-dargent" title="Permanent link">&para;</a></h3>
+<h1 id="roublard">Roublard<a class="headerlink" href="#roublard" title="Permanent link">&para;</a></h1>
+<h2 id="description_8">Description<a class="headerlink" href="#description_8" title="Permanent link">&para;</a></h2>
+<h2 id="archetypes-de-roublard">ARchétypes de roublard<a class="headerlink" href="#archetypes-de-roublard" title="Permanent link">&para;</a></h2>
+<h3 id="escroc-arcanique">Escroc arcanique<a class="headerlink" href="#escroc-arcanique" title="Permanent link">&para;</a></h3>
+<h3 id="assassin">Assassin<a class="headerlink" href="#assassin" title="Permanent link">&para;</a></h3>
+<h3 id="investigateur">Investigateur<a class="headerlink" href="#investigateur" title="Permanent link">&para;</a></h3>
+<h3 id="conspirateur">Conspirateur<a class="headerlink" href="#conspirateur" title="Permanent link">&para;</a></h3>
+<h3 id="fantome">Fantôme<a class="headerlink" href="#fantome" title="Permanent link">&para;</a></h3>
+<h3 id="eclaireur">Éclaireur<a class="headerlink" href="#eclaireur" title="Permanent link">&para;</a></h3>
+<h3 id="fier-a-bras">Fier-à-bras<a class="headerlink" href="#fier-a-bras" title="Permanent link">&para;</a></h3>
+<h3 id="couteau-dame">Couteau d'âme<a class="headerlink" href="#couteau-dame" title="Permanent link">&para;</a></h3>
+<h3 id="voleur">Voleur<a class="headerlink" href="#voleur" title="Permanent link">&para;</a></h3>
+<h3 id="touche-par-laraignee">Touché par l'araignée$<a class="headerlink" href="#touche-par-laraignee" title="Permanent link">&para;</a></h3>
+<h3 id="joli-minois">Joli Minois<a class="headerlink" href="#joli-minois" title="Permanent link">&para;</a></h3>
+<h3 id="arnaqueur">Arnaqueur<a class="headerlink" href="#arnaqueur" title="Permanent link">&para;</a></h3>
+<h3 id="traqueur-arachnide">Traqueur arachnide<a class="headerlink" href="#traqueur-arachnide" title="Permanent link">&para;</a></h3>
+<h3 id="executeur">Exécuteur<a class="headerlink" href="#executeur" title="Permanent link">&para;</a></h3>
+<h3 id="maitre-des-ombres">Maître des ombres<a class="headerlink" href="#maitre-des-ombres" title="Permanent link">&para;</a></h3>
+<h3 id="escroc-temporel">Escroc temporel<a class="headerlink" href="#escroc-temporel" title="Permanent link">&para;</a></h3>
+<h3 id="tueur-de-titans">Tueur de titans<a class="headerlink" href="#tueur-de-titans" title="Permanent link">&para;</a></h3>
+<h1 id="ensorceleur">Ensorceleur<a class="headerlink" href="#ensorceleur" title="Permanent link">&para;</a></h1>
+<h2 id="description_9">Description<a class="headerlink" href="#description_9" title="Permanent link">&para;</a></h2>
+<h2 id="origines-magiques">Origines magiques<a class="headerlink" href="#origines-magiques" title="Permanent link">&para;</a></h2>
+<h3 id="esprit-aberrant">Esprit aberrant<a class="headerlink" href="#esprit-aberrant" title="Permanent link">&para;</a></h3>
+<h3 id="ame-mecanique">Âme mécanique<a class="headerlink" href="#ame-mecanique" title="Permanent link">&para;</a></h3>
+<h3 id="elu-divin">élu divin<a class="headerlink" href="#elu-divin" title="Permanent link">&para;</a></h3>
+<h3 id="lignee-draconique">lignée draconique<a class="headerlink" href="#lignee-draconique" title="Permanent link">&para;</a></h3>
+<h3 id="sorcellerie-de-la-lune">Sorcellerie de la lune<a class="headerlink" href="#sorcellerie-de-la-lune" title="Permanent link">&para;</a></h3>
+<h3 id="magie-de-lombre">Magie de l'ombre<a class="headerlink" href="#magie-de-lombre" title="Permanent link">&para;</a></h3>
+<h3 id="sorcellerie-des-tempetes">Sorcellerie des tempêtes<a class="headerlink" href="#sorcellerie-des-tempetes" title="Permanent link">&para;</a></h3>
+<h3 id="magie-sauvage">Magie sauvage<a class="headerlink" href="#magie-sauvage" title="Permanent link">&para;</a></h3>
+<h3 id="lignee-cendree">Lignée cendrée<a class="headerlink" href="#lignee-cendree" title="Permanent link">&para;</a></h3>
+<h3 id="lignee-epineuse">Lignée Épineuse<a class="headerlink" href="#lignee-epineuse" title="Permanent link">&para;</a></h3>
+<h3 id="seigneur-des-emotions">Seigneur des Émotions<a class="headerlink" href="#seigneur-des-emotions" title="Permanent link">&para;</a></h3>
+<h3 id="habitant-du-mirroir">Habitant du mirroir<a class="headerlink" href="#habitant-du-mirroir" title="Permanent link">&para;</a></h3>
+<h3 id="maitre-des-slimes">Maître des slimes<a class="headerlink" href="#maitre-des-slimes" title="Permanent link">&para;</a></h3>
+<h3 id="hero-reincarne">Héro réincarné<a class="headerlink" href="#hero-reincarne" title="Permanent link">&para;</a></h3>
+<h3 id="lie-par-lesprit">Lié par l'esprit<a class="headerlink" href="#lie-par-lesprit" title="Permanent link">&para;</a></h3>
+<h3 id="magie-cartoonesque">Magie Cartoonesque<a class="headerlink" href="#magie-cartoonesque" title="Permanent link">&para;</a></h3>
+<h3 id="ne-dune-mimique">NÉ d'une mimique<a class="headerlink" href="#ne-dune-mimique" title="Permanent link">&para;</a></h3>
+<h3 id="saucier">Saucier<a class="headerlink" href="#saucier" title="Permanent link">&para;</a></h3>
+<h1 id="occultiste">Occultiste<a class="headerlink" href="#occultiste" title="Permanent link">&para;</a></h1>
+<h2 id="description_10">Description<a class="headerlink" href="#description_10" title="Permanent link">&para;</a></h2>
+<h2 id="patrons-doutremonde">Patrons d'Outremonde<a class="headerlink" href="#patrons-doutremonde" title="Permanent link">&para;</a></h2>
+<h3 id="larchifee">L'archifée<a class="headerlink" href="#larchifee" title="Permanent link">&para;</a></h3>
+<h3 id="le-celeste">Le céleste<a class="headerlink" href="#le-celeste" title="Permanent link">&para;</a></h3>
+<h3 id="celui-qui-rode-dans-les-profondeurs">Celui qui rôde dans les profondeurs<a class="headerlink" href="#celui-qui-rode-dans-les-profondeurs" title="Permanent link">&para;</a></h3>
+<h3 id="le-fielon">Le fiélon<a class="headerlink" href="#le-fielon" title="Permanent link">&para;</a></h3>
+<h3 id="le-genie">Le génie<a class="headerlink" href="#le-genie" title="Permanent link">&para;</a></h3>
+<h3 id="le-grand-ancien">Le grand ancien<a class="headerlink" href="#le-grand-ancien" title="Permanent link">&para;</a></h3>
+<h3 id="la-lame-maudite">La lame maudite<a class="headerlink" href="#la-lame-maudite" title="Permanent link">&para;</a></h3>
+<h3 id="limmortel">L'Immortel<a class="headerlink" href="#limmortel" title="Permanent link">&para;</a></h3>
+<h3 id="larchive-maudite">L'archive maudite<a class="headerlink" href="#larchive-maudite" title="Permanent link">&para;</a></h3>
+<h3 id="le-loup-cendre">Le loup cendré<a class="headerlink" href="#le-loup-cendre" title="Permanent link">&para;</a></h3>
+<h3 id="le-bosquet-depines-noires">Le bosquet d'épines noires<a class="headerlink" href="#le-bosquet-depines-noires" title="Permanent link">&para;</a></h3>
+<h3 id="la-cabale-des-monnaies">La cabale des monnaies<a class="headerlink" href="#la-cabale-des-monnaies" title="Permanent link">&para;</a></h3>
+<h3 id="la-citadelle-eternelle">La citadelle éternelle<a class="headerlink" href="#la-citadelle-eternelle" title="Permanent link">&para;</a></h3>
+<h3 id="lexil-dechu">L'Exil déchu<a class="headerlink" href="#lexil-dechu" title="Permanent link">&para;</a></h3>
+<h3 id="le-cimetiere-interdit">Le cimetière interdit<a class="headerlink" href="#le-cimetiere-interdit" title="Permanent link">&para;</a></h3>
+<h3 id="la-convocation-gelatineuse">La convocation gélatineuse<a class="headerlink" href="#la-convocation-gelatineuse" title="Permanent link">&para;</a></h3>
+<h3 id="le-portrait-de-gray">Le portrait de gray<a class="headerlink" href="#le-portrait-de-gray" title="Permanent link">&para;</a></h3>
+<h3 id="le-gardien-des-profondeurs">Le gardien des profondeurs<a class="headerlink" href="#le-gardien-des-profondeurs" title="Permanent link">&para;</a></h3>
+<h3 id="laccord-parfait">L'accord parfait<a class="headerlink" href="#laccord-parfait" title="Permanent link">&para;</a></h3>
+<h3 id="limperatrice-serpent">L'impératrice serpent<a class="headerlink" href="#limperatrice-serpent" title="Permanent link">&para;</a></h3>
+<h3 id="le-chat-dombre">Le chat d'ombre<a class="headerlink" href="#le-chat-dombre" title="Permanent link">&para;</a></h3>
+<h3 id="le-seigneur-des-tempetes">Le seigneur des tempêtes<a class="headerlink" href="#le-seigneur-des-tempetes" title="Permanent link">&para;</a></h3>
+<h3 id="le-guerrier-saint">Le guerrier saint<a class="headerlink" href="#le-guerrier-saint" title="Permanent link">&para;</a></h3>
+<h3 id="la-tisseuse-de-mensonge">La tisseuse de mensonge<a class="headerlink" href="#la-tisseuse-de-mensonge" title="Permanent link">&para;</a></h3>
+<h3 id="le-chasseur-sauvage">Le chasseur sauvage<a class="headerlink" href="#le-chasseur-sauvage" title="Permanent link">&para;</a></h3>
+<h3 id="la-brume-des-morts">La brume des morts<a class="headerlink" href="#la-brume-des-morts" title="Permanent link">&para;</a></h3>
+<h3 id="le-vous-du-futur">le vous du futur<a class="headerlink" href="#le-vous-du-futur" title="Permanent link">&para;</a></h3>
+<h3 id="le-mj">Le MJ<a class="headerlink" href="#le-mj" title="Permanent link">&para;</a></h3>
+<h3 id="lheritage">L'héritage<a class="headerlink" href="#lheritage" title="Permanent link">&para;</a></h3>
+<h3 id="le-magicien">Le magicien<a class="headerlink" href="#le-magicien" title="Permanent link">&para;</a></h3>
+<h3 id="le-symbiote">Le symbiote<a class="headerlink" href="#le-symbiote" title="Permanent link">&para;</a></h3>
+<h1 id="magicien">Magicien<a class="headerlink" href="#magicien" title="Permanent link">&para;</a></h1>
+<h2 id="description_11">Description<a class="headerlink" href="#description_11" title="Permanent link">&para;</a></h2>
+<h2 id="traditions-arcaniques">Traditions arcaniques<a class="headerlink" href="#traditions-arcaniques" title="Permanent link">&para;</a></h2>
+<h3 id="chantelame">Chantelame<a class="headerlink" href="#chantelame" title="Permanent link">&para;</a></h3>
+<h3 id="ordre-des-scribes">Ordre des scribes<a class="headerlink" href="#ordre-des-scribes" title="Permanent link">&para;</a></h3>
+<h3 id="ecole-dabjuration">École d'abjuration<a class="headerlink" href="#ecole-dabjuration" title="Permanent link">&para;</a></h3>
+<h3 id="ecole-de-conjuration">École de conjuration<a class="headerlink" href="#ecole-de-conjuration" title="Permanent link">&para;</a></h3>
+<h3 id="ecole-de-divination">École de divination<a class="headerlink" href="#ecole-de-divination" title="Permanent link">&para;</a></h3>
+<h3 id="ecole-denchantement">École d'enchantement<a class="headerlink" href="#ecole-denchantement" title="Permanent link">&para;</a></h3>
+<h3 id="ecole-devocation">École d'évocation<a class="headerlink" href="#ecole-devocation" title="Permanent link">&para;</a></h3>
+<h3 id="ecole-dillusion">École d'illusion<a class="headerlink" href="#ecole-dillusion" title="Permanent link">&para;</a></h3>
+<h3 id="ecole-de-necromancie">École de nécromancie<a class="headerlink" href="#ecole-de-necromancie" title="Permanent link">&para;</a></h3>
+<h3 id="ecole-de-transmutation">École de transmutation<a class="headerlink" href="#ecole-de-transmutation" title="Permanent link">&para;</a></h3>
+<h3 id="magie-de-guerre">MAGIE DE GUERRE<a class="headerlink" href="#magie-de-guerre" title="Permanent link">&para;</a></h3>
+<h3 id="plasmologie-esoterique">pLASMOLOGIE ÉSOTÉRIQUE<a class="headerlink" href="#plasmologie-esoterique" title="Permanent link">&para;</a></h3>
+<h3 id="cartographie-des-reves">cARTOGRAPHIE DES RÊVES<a class="headerlink" href="#cartographie-des-reves" title="Permanent link">&para;</a></h3>
+<h3 id="maitre-des-familiers">mAÎTRE DES FAMILIERS<a class="headerlink" href="#maitre-des-familiers" title="Permanent link">&para;</a></h3>
+<h3 id="mage-de-projectiles-magiques">mAGE DE PROJECTILES MAGIQUES<a class="headerlink" href="#mage-de-projectiles-magiques" title="Permanent link">&para;</a></h3>
+<h3 id="savant-mystique">sAVANT MYSTIQUE<a class="headerlink" href="#savant-mystique" title="Permanent link">&para;</a></h3>
+<h3 id="ecole-de-chronomancie">École de chronomancie<a class="headerlink" href="#ecole-de-chronomancie" title="Permanent link">&para;</a></h3>
+<h3 id="ecole-de-gastronomie">école de gastronomie<a class="headerlink" href="#ecole-de-gastronomie" title="Permanent link">&para;</a></h3>
+<h3 id="ecole-de-somnomancie">école de somnomancie<a class="headerlink" href="#ecole-de-somnomancie" title="Permanent link">&para;</a></h3>
+<h1 id="artificier">Artificier<a class="headerlink" href="#artificier" title="Permanent link">&para;</a></h1>
+<h2 id="description_12">Description<a class="headerlink" href="#description_12" title="Permanent link">&para;</a></h2>
+<h2 id="specialistes-artificiers">Spécialistes artificiers<a class="headerlink" href="#specialistes-artificiers" title="Permanent link">&para;</a></h2>
+<h3 id="alchimiste">Alchimiste<a class="headerlink" href="#alchimiste" title="Permanent link">&para;</a></h3>
+<h3 id="armurier">Armurier<a class="headerlink" href="#armurier" title="Permanent link">&para;</a></h3>
+<h3 id="artilleriste">Artilleriste<a class="headerlink" href="#artilleriste" title="Permanent link">&para;</a></h3>
+<h3 id="forgergon-de-guerre">Forgergon de guerre<a class="headerlink" href="#forgergon-de-guerre" title="Permanent link">&para;</a></h3>
+<h1 id="alchimiste_1">Alchimiste<a class="headerlink" href="#alchimiste_1" title="Permanent link">&para;</a></h1>
+<h2 id="description_13">Description<a class="headerlink" href="#description_13" title="Permanent link">&para;</a></h2>
+<h2 id="champs-detudes">Champs d'études<a class="headerlink" href="#champs-detudes" title="Permanent link">&para;</a></h2>
+<h3 id="amoriste">Amoriste<a class="headerlink" href="#amoriste" title="Permanent link">&para;</a></h3>
+<h3 id="apothicaire">Apothicaire<a class="headerlink" href="#apothicaire" title="Permanent link">&para;</a></h3>
+<h3 id="ingenieur-dynamo">Ingénieur dynamo<a class="headerlink" href="#ingenieur-dynamo" title="Permanent link">&para;</a></h3>
+<h3 id="bombeur-fou">Bombeur fou<a class="headerlink" href="#bombeur-fou" title="Permanent link">&para;</a></h3>
+<h3 id="mutageniste">Mutagèniste<a class="headerlink" href="#mutageniste" title="Permanent link">&para;</a></h3>
+<h3 id="slime-boy">Slime-boy<a class="headerlink" href="#slime-boy" title="Permanent link">&para;</a></h3>
+<h3 id="forgeron-de-venin">Forgeron de venin<a class="headerlink" href="#forgeron-de-venin" title="Permanent link">&para;</a></h3>
+<h3 id="xenoalchimiste">Xénoalchimiste<a class="headerlink" href="#xenoalchimiste" title="Permanent link">&para;</a></h3>
+<h1 id="capitaine">Capitaine<a class="headerlink" href="#capitaine" title="Permanent link">&para;</a></h1>
+<h2 id="description_14">DEscription<a class="headerlink" href="#description_14" title="Permanent link">&para;</a></h2>
+<h2 id="etendards">Étendards<a class="headerlink" href="#etendards" title="Permanent link">&para;</a></h2>
+<h3 id="etendard-de-dragon">Étendard de Dragon<a class="headerlink" href="#etendard-de-dragon" title="Permanent link">&para;</a></h3>
+<h3 id="etendard-daigle">Étendard d'Aigle<a class="headerlink" href="#etendard-daigle" title="Permanent link">&para;</a></h3>
+<h3 id="etendard-du-jolly-roger">Étendard du Jolly Roger<a class="headerlink" href="#etendard-du-jolly-roger" title="Permanent link">&para;</a></h3>
+<h3 id="etendard-de-lion">Étendard De Lion<a class="headerlink" href="#etendard-de-lion" title="Permanent link">&para;</a></h3>
+<h3 id="etendard-de-belier">Étendard De Bélier<a class="headerlink" href="#etendard-de-belier" title="Permanent link">&para;</a></h3>
+<h3 id="etendard-de-corbeau">Étendard de Corbeau<a class="headerlink" href="#etendard-de-corbeau" title="Permanent link">&para;</a></h3>
+<h3 id="etendard-de-tortue">Étendard de tortue<a class="headerlink" href="#etendard-de-tortue" title="Permanent link">&para;</a></h3>
+<h1 id="artisan">Artisan<a class="headerlink" href="#artisan" title="Permanent link">&para;</a></h1>
+<h2 id="description_15">Description<a class="headerlink" href="#description_15" title="Permanent link">&para;</a></h2>
+<h2 id="guildes-dartisans">Guildes d'artisans<a class="headerlink" href="#guildes-dartisans" title="Permanent link">&para;</a></h2>
+<h3 id="guilde-des-maestro-arcaniques">Guilde des maestro arcaniques<a class="headerlink" href="#guilde-des-maestro-arcaniques" title="Permanent link">&para;</a></h3>
+<h3 id="guilde-des-armigeres">Guilde des Armigères<a class="headerlink" href="#guilde-des-armigeres" title="Permanent link">&para;</a></h3>
+<h3 id="guilde-des-travailleurs-de-la-lame">Guilde des travailleurs de la lame<a class="headerlink" href="#guilde-des-travailleurs-de-la-lame" title="Permanent link">&para;</a></h3>
+<h3 id="guilde-des-calibaron">guilde des Calibaron<a class="headerlink" href="#guilde-des-calibaron" title="Permanent link">&para;</a></h3>
+<h3 id="guilde-des-chevaliers-forges">Guilde des chevaliers forgés<a class="headerlink" href="#guilde-des-chevaliers-forges" title="Permanent link">&para;</a></h3>
+<h3 id="guilde-des-mecanautes">Guilde des mécanautes<a class="headerlink" href="#guilde-des-mecanautes" title="Permanent link">&para;</a></h3>
+<h3 id="guilde-des-seigneurs-du-tonnerre">Guilde des seigneurs du tonnerre<a class="headerlink" href="#guilde-des-seigneurs-du-tonnerre" title="Permanent link">&para;</a></h3>
+<h3 id="guilde-des-piegeurs">Guilde des piègeurs<a class="headerlink" href="#guilde-des-piegeurs" title="Permanent link">&para;</a></h3>
+<h1 id="fusilier">Fusilier<a class="headerlink" href="#fusilier" title="Permanent link">&para;</a></h1>
+<h2 id="description_16">Description<a class="headerlink" href="#description_16" title="Permanent link">&para;</a></h2>
+<h2 id="credos-de-fusilier">Crédos de fusilier<a class="headerlink" href="#credos-de-fusilier" title="Permanent link">&para;</a></h2>
+<h3 id="char-arme">Char armé<a class="headerlink" href="#char-arme" title="Permanent link">&para;</a></h3>
+<h3 id="maitre-du-kung-pan">Maître du kung-pan<a class="headerlink" href="#maitre-du-kung-pan" title="Permanent link">&para;</a></h3>
+<h3 id="flambeur">Flambeur<a class="headerlink" href="#flambeur" title="Permanent link">&para;</a></h3>
+<h3 id="mousquetaire">Mousquetaire<a class="headerlink" href="#mousquetaire" title="Permanent link">&para;</a></h3>
+<h3 id="pistolero">Pistolero<a class="headerlink" href="#pistolero" title="Permanent link">&para;</a></h3>
+<h3 id="tireur-delite">Tireur d'élite<a class="headerlink" href="#tireur-delite" title="Permanent link">&para;</a></h3>
+<h3 id="tireur-de-sorts">Tireur de sorts<a class="headerlink" href="#tireur-de-sorts" title="Permanent link">&para;</a></h3>
+<h3 id="trick-shot">Trick shot<a class="headerlink" href="#trick-shot" title="Permanent link">&para;</a></h3>
+<h3 id="white-hat">White Hat<a class="headerlink" href="#white-hat" title="Permanent link">&para;</a></h3>
+<h1 id="investigateur_1">Investigateur<a class="headerlink" href="#investigateur_1" title="Permanent link">&para;</a></h1>
+<h2 id="description_17">Description<a class="headerlink" href="#description_17" title="Permanent link">&para;</a></h2>
+<h2 id="specialisations-occultes">Spécialisations occultes<a class="headerlink" href="#specialisations-occultes" title="Permanent link">&para;</a></h2>
+<h3 id="antiquaire">Antiquaire<a class="headerlink" href="#antiquaire" title="Permanent link">&para;</a></h3>
+<h3 id="archiviste">Archiviste<a class="headerlink" href="#archiviste" title="Permanent link">&para;</a></h3>
+<h3 id="detective">Détective<a class="headerlink" href="#detective" title="Permanent link">&para;</a></h3>
+<h3 id="exterminateur">Exterminateur<a class="headerlink" href="#exterminateur" title="Permanent link">&para;</a></h3>
+<h3 id="inquisiteur">Inquisiteur<a class="headerlink" href="#inquisiteur" title="Permanent link">&para;</a></h3>
+<h3 id="medium">Medium<a class="headerlink" href="#medium" title="Permanent link">&para;</a></h3>
+<h3 id="occultiste_1">Occultiste<a class="headerlink" href="#occultiste_1" title="Permanent link">&para;</a></h3>
+<h3 id="espion">Espion<a class="headerlink" href="#espion" title="Permanent link">&para;</a></h3>
+<h1 id="martyr">Martyr<a class="headerlink" href="#martyr" title="Permanent link">&para;</a></h1>
+<h2 id="description_18">Description<a class="headerlink" href="#description_18" title="Permanent link">&para;</a></h2>
+<h2 id="fardeaux-mortels">Fardeaux mortels<a class="headerlink" href="#fardeaux-mortels" title="Permanent link">&para;</a></h2>
+<h3 id="fardeau-dexpiation">Fardeau d'expiation<a class="headerlink" href="#fardeau-dexpiation" title="Permanent link">&para;</a></h3>
+<h3 id="fardeau-de-discorde">Fardeau de discorde<a class="headerlink" href="#fardeau-de-discorde" title="Permanent link">&para;</a></h3>
+<h3 id="fardeau-de-la-fin">Fardeau de la fin<a class="headerlink" href="#fardeau-de-la-fin" title="Permanent link">&para;</a></h3>
+<h3 id="fardeau-de-pitie">Fardeau de pitié<a class="headerlink" href="#fardeau-de-pitie" title="Permanent link">&para;</a></h3>
+<h3 id="fardeau-de-renaissance">Fardeau de renaissance<a class="headerlink" href="#fardeau-de-renaissance" title="Permanent link">&para;</a></h3>
+<h3 id="fairdeau-de-revolution">Fairdeau de révolution<a class="headerlink" href="#fairdeau-de-revolution" title="Permanent link">&para;</a></h3>
+<h3 id="fairdeau-de-veritie">Fairdeau de véritié<a class="headerlink" href="#fairdeau-de-veritie" title="Permanent link">&para;</a></h3>
+<h3 id="fairdeau-de-tyrannie">Fairdeau de tyrannie<a class="headerlink" href="#fairdeau-de-tyrannie" title="Permanent link">&para;</a></h3>
+<h1 id="necromancien">Nécromancien<a class="headerlink" href="#necromancien" title="Permanent link">&para;</a></h1>
+<h2 id="description_19">Description<a class="headerlink" href="#description_19" title="Permanent link">&para;</a></h2>
+<h2 id="ambitions-mortelles">Ambitions  mortelles<a class="headerlink" href="#ambitions-mortelles" title="Permanent link">&para;</a></h2>
+<h3 id="descendant-du-sang">Descendant du sang<a class="headerlink" href="#descendant-du-sang" title="Permanent link">&para;</a></h3>
+<h3 id="chevalier-de-la-mort">Chevalier de la mort<a class="headerlink" href="#chevalier-de-la-mort" title="Permanent link">&para;</a></h3>
+<h3 id="seigneur-supreme">Seigneur suprême<a class="headerlink" href="#seigneur-supreme" title="Permanent link">&para;</a></h3>
+<h3 id="maitre-pale">Maître pâle<a class="headerlink" href="#maitre-pale" title="Permanent link">&para;</a></h3>
+<h3 id="pharaon">Pharaon<a class="headerlink" href="#pharaon" title="Permanent link">&para;</a></h3>
+<h3 id="seigneur-de-la-peste">Seigneur de la peste<a class="headerlink" href="#seigneur-de-la-peste" title="Permanent link">&para;</a></h3>
+<h3 id="reanimateur">Réanimateur<a class="headerlink" href="#reanimateur" title="Permanent link">&para;</a></h3>
+<h3 id="faucheur">Faucheur<a class="headerlink" href="#faucheur" title="Permanent link">&para;</a></h3>
+<h1 id="gardien">Gardien<a class="headerlink" href="#gardien" title="Permanent link">&para;</a></h1>
+<h2 id="description_20">Description<a class="headerlink" href="#description_20" title="Permanent link">&para;</a></h2>
+<h2 id="appels-du-champion">Appels du Champion<a class="headerlink" href="#appels-du-champion" title="Permanent link">&para;</a></h2>
+<h3 id="gardien-baigne-dans-le-sang">Gardien baigné dans le sang<a class="headerlink" href="#gardien-baigne-dans-le-sang" title="Permanent link">&para;</a></h3>
+<h3 id="sentinelle-grise">Sentinelle grise<a class="headerlink" href="#sentinelle-grise" title="Permanent link">&para;</a></h3>
+<h3 id="chasseur-nocturne">Chasseur nocturne<a class="headerlink" href="#chasseur-nocturne" title="Permanent link">&para;</a></h3>
+<h3 id="defenseur-au-cur-de-pierre">Défenseur au cœur de pierre<a class="headerlink" href="#defenseur-au-cur-de-pierre" title="Permanent link">&para;</a></h3>
+<h3 id="sentinelle-des-tempetes">Sentinelle des tempêtes<a class="headerlink" href="#sentinelle-des-tempetes" title="Permanent link">&para;</a></h3>
+<h3 id="protecteur-verdoyant">Protecteur verdoyant<a class="headerlink" href="#protecteur-verdoyant" title="Permanent link">&para;</a></h3>
+<h1 id="mage-de-guerre">Mage de guerre<a class="headerlink" href="#mage-de-guerre" title="Permanent link">&para;</a></h1>
+<h2 id="description_21">Description<a class="headerlink" href="#description_21" title="Permanent link">&para;</a></h2>
+<h2 id="maisons-des-mages-de-guerre">Maisons des mages de guerre<a class="headerlink" href="#maisons-des-mages-de-guerre" title="Permanent link">&para;</a></h2>
+<h3 id="maison-des-fous">Maison des fous<a class="headerlink" href="#maison-des-fous" title="Permanent link">&para;</a></h3>
+<h3 id="maison-des-cartes">Maison des cartes<a class="headerlink" href="#maison-des-cartes" title="Permanent link">&para;</a></h3>
+<h3 id="maison-des-des">maison des dés<a class="headerlink" href="#maison-des-des" title="Permanent link">&para;</a></h3>
+<h3 id="maison-des-rois">Maison des rois<a class="headerlink" href="#maison-des-rois" title="Permanent link">&para;</a></h3>
+<h3 id="maison-des-cavaliers">Maison des cavaliers<a class="headerlink" href="#maison-des-cavaliers" title="Permanent link">&para;</a></h3>
+<h3 id="maison-des-lanciers">Maison des lanciers<a class="headerlink" href="#maison-des-lanciers" title="Permanent link">&para;</a></h3>
+<h3 id="maison-des-pions">Maison des pions<a class="headerlink" href="#maison-des-pions" title="Permanent link">&para;</a></h3>
+<h3 id="maison-des-tours">Maison des tours<a class="headerlink" href="#maison-des-tours" title="Permanent link">&para;</a></h3>
+<h1 id="ligateur">Ligateur<a class="headerlink" href="#ligateur" title="Permanent link">&para;</a></h1>
+<h2 id="description_22">Description<a class="headerlink" href="#description_22" title="Permanent link">&para;</a></h2>
+<h2 id="cultes-esoteriques">Cultes ésotériques<a class="headerlink" href="#cultes-esoteriques" title="Permanent link">&para;</a></h2>
+<h3 id="les-avataristes">Les avataristes<a class="headerlink" href="#les-avataristes" title="Permanent link">&para;</a></h3>
+<h3 id="la-confrerie-des-ascetes">La confrérie des ascètes<a class="headerlink" href="#la-confrerie-des-ascetes" title="Permanent link">&para;</a></h3>
+<h3 id="leglise-de-gyx">L'église de gyx<a class="headerlink" href="#leglise-de-gyx" title="Permanent link">&para;</a></h3>
+<h3 id="les-fideles-dishtar">Les fidèles d'ishtar<a class="headerlink" href="#les-fideles-dishtar" title="Permanent link">&para;</a></h3>
+<h3 id="la-loge-de-la-legion">la Loge de La Légion<a class="headerlink" href="#la-loge-de-la-legion" title="Permanent link">&para;</a></h3>
+<h3 id="ordre-de-la-ligature-cramoisie">Ordre de la Ligature cramoisie<a class="headerlink" href="#ordre-de-la-ligature-cramoisie" title="Permanent link">&para;</a></h3>
+<h3 id="societe-du-sceau-stygien">Société du sceau stygien<a class="headerlink" href="#societe-du-sceau-stygien" title="Permanent link">&para;</a></h3>
+<h1 id="tisserand">Tisserand<a class="headerlink" href="#tisserand" title="Permanent link">&para;</a></h1>
+<h2 id="description_23">Description<a class="headerlink" href="#description_23" title="Permanent link">&para;</a></h2>
+<h2 id="tapisserie-de-tisserand">Tapisserie de tisserand<a class="headerlink" href="#tapisserie-de-tisserand" title="Permanent link">&para;</a></h2>
+<h3 id="couture-cramoisie">Couture Cramoisie<a class="headerlink" href="#couture-cramoisie" title="Permanent link">&para;</a></h3>
+<h3 id="couture-mortelle">Couture mortelle<a class="headerlink" href="#couture-mortelle" title="Permanent link">&para;</a></h3>
+<h3 id="couture-de-spirale-etoilee">Couture de spirale étoilée<a class="headerlink" href="#couture-de-spirale-etoilee" title="Permanent link">&para;</a></h3>
+<h3 id="couture-dombres-et-lumieres">Couture d'ombres et lumières<a class="headerlink" href="#couture-dombres-et-lumieres" title="Permanent link">&para;</a></h3>
+
+
+
+<!-- Source file information -->
+
+
+<!-- Was this page helpful? -->
+
+
+
+
+<!-- Comment system -->
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
